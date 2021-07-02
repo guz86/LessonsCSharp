@@ -16,6 +16,19 @@ namespace inkrementDecrement
             Console.WriteLine("++a "+ ++a);
             Console.WriteLine("--a " + --a);
 
+            // приоритет операций
+            a = 1;
+            // 
+            Console.WriteLine("++a * a " + (++a * a));
+            a = 1;
+            // 
+            Console.WriteLine("a++ * a " + (a++ * a));
+
+            // тест
+
+            int g = 2, m = 3, l = 4;
+            Console.WriteLine("g++ + g + ++m * --l " + (g++  + ++m * --l));
+            //                  2 + 4 * 3 = 12+2 = 15
         }
     }
 }
