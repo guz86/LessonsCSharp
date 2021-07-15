@@ -27,7 +27,10 @@ namespace inkrementDecrement
             // тест
 
             int g = 2, m = 3, l = 4;
-            Console.WriteLine("g++ + g + ++m * --l " + (g++  + ++m * --l));
+            // 2 + 3 = 5  ++g + ++g
+            // 2 + 4 = 6 g++ + ++g
+            // Console.WriteLine(g++ + ++g);
+            // Console.WriteLine("g++ + g + ++m * --l " + (g++  + ++m * --l));
             //                  2 + 4 * 3 = 12+2 = 15
         }
     }

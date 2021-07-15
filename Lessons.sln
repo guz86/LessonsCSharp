@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lessons", "Lessons\Lessons.csproj", "{CBD9A3D7-13BD-42B3-AEF0-D55902F6663B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lessons", "Lessons\Lessons.csproj", "{CBD9A3D7-13BD-42B3-AEF0-D55902F6663B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inkrementDecrement", "inkrementDecrement\inkrementDecrement.csproj", "{0212E451-A4FE-456B-B118-9CF1C9750125}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "inkrementDecrement", "inkrementDecrement\inkrementDecrement.csproj", "{0212E451-A4FE-456B-B118-9CF1C9750125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "comparisonOperation", "comparisonOperation\comparisonOperation.csproj", "{68DAAF1F-CD8A-4A2D-A94B-9E69377E7022}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0212E451-A4FE-456B-B118-9CF1C9750125}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0212E451-A4FE-456B-B118-9CF1C9750125}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0212E451-A4FE-456B-B118-9CF1C9750125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68DAAF1F-CD8A-4A2D-A94B-9E69377E7022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DAAF1F-CD8A-4A2D-A94B-9E69377E7022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DAAF1F-CD8A-4A2D-A94B-9E69377E7022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68DAAF1F-CD8A-4A2D-A94B-9E69377E7022}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
