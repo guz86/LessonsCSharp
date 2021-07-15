@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "comparisonOperation", "comp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ifElse", "ifElse\ifElse.csproj", "{5879633D-1162-4715-887D-6B0E9BC97185}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ifElseEvenNumber", "ifElseEvenNumber\ifElseEvenNumber.csproj", "{661B6996-4E46-4752-B446-D331DE2A1C6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5879633D-1162-4715-887D-6B0E9BC97185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5879633D-1162-4715-887D-6B0E9BC97185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5879633D-1162-4715-887D-6B0E9BC97185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661B6996-4E46-4752-B446-D331DE2A1C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661B6996-4E46-4752-B446-D331DE2A1C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661B6996-4E46-4752-B446-D331DE2A1C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661B6996-4E46-4752-B446-D331DE2A1C6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
