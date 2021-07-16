@@ -13,9 +13,9 @@ namespace calculatorSwitch
                 double a;
                 char symbol;
                 double b;
+                double result = 0;
 
                 Console.Clear();
-
 
                 try
                 {
@@ -33,12 +33,7 @@ namespace calculatorSwitch
                     continue;
                 }
 
-
-
-                double result = 0;
-
                 Console.WriteLine("Вычисляем: " + a + symbol + b);
-
 
                 switch (symbol)
                 {
@@ -69,8 +64,6 @@ namespace calculatorSwitch
                         Console.WriteLine("Введен не верный символ!");
                         break;
                 }
-
-
 
                 Console.WriteLine("Результат: " + result);
 
