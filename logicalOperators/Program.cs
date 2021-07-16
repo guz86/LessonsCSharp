@@ -14,7 +14,7 @@ namespace logicalOperators
             //{
             // Console.WriteLine("Вы здоровы!");
             // }
-            if (isHighTemperature && isHeadPain) {
+            if (isHighTemperature || isHeadPain) {
                 Console.WriteLine("Возможно вы заболели!");
             }
 
