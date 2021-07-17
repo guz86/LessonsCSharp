@@ -26,13 +26,13 @@ namespace theSumAndNumberOfEvenAndOddNumbers
                 if (startDigit % 2 == 1)
                 {
                     //Console.WriteLine("Нечетное число "+ startDigit);
-                    oddCount += 1;
+                    oddCount++;
                     oddSum += startDigit;
                 }
                 else
                 {
                     //Console.WriteLine("Четное число "+ startDigit);
-                    evenCount += 1;
+                    evenCount++;
                     evenSum += startDigit;
                 }
                 
