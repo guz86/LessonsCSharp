@@ -23,17 +23,18 @@ namespace theSumAndNumberOfEvenAndOddNumbers
             
             while (startDigit <= endDigit)
             {
-                if (startDigit % 2 == 1)
-                {
-                    //Console.WriteLine("Нечетное число "+ startDigit);
-                    oddCount++;
-                    oddSum += startDigit;
-                }
-                else
+                if (startDigit % 2 == 0)
                 {
                     //Console.WriteLine("Четное число "+ startDigit);
                     evenCount++;
                     evenSum += startDigit;
+                }
+                else
+                {                
+                    //Console.WriteLine("Нечетное число "+ startDigit);
+                    oddCount++;
+                    oddSum += startDigit;
+                    
                 }
                 
 
