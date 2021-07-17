@@ -46,11 +46,11 @@ namespace forI
             }
 
             // вложенные
-            for (int i = 0; i < 3; i++)
+            for (int i = 1; i <= 3; i++)
             {
                 Console.WriteLine("Цикл 1 - итерация " + i);
 
-                for (int j = 0; j < 4; j++)
+                for (int j = 1; j <= 4; j++)
                 {
                     Console.WriteLine("\tЦикл 2 - итерация " + j);
                 }
