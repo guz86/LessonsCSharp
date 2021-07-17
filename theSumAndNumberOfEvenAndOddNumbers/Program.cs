@@ -9,8 +9,8 @@ namespace theSumAndNumberOfEvenAndOddNumbers
             int startDigit;
             int endDigit;
 
-            int evenCount = 0;
-            int oddCount = 0;
+            uint evenCount = 0;
+            uint oddCount = 0;
 
             int evenSum = 0;
             int oddSum = 0;
