@@ -36,6 +36,11 @@ namespace forI
             // for (int i = 0, j = 5; i <= 5 && j >= 0 ; i++, j--)
             for (int i = 0, j = 5; i <= 5; i++, j--)
             {
+                if (j == 3)
+                {
+                    continue;
+
+                }
                 Console.WriteLine("i "+ i);
                 Console.WriteLine("j "+ j);
             }
