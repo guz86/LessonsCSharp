@@ -84,6 +84,27 @@ namespace boxLoop
 
             }
 
+            Console.WriteLine();
+
+
+
+
+            int heightTriangle6 = 10;
+
+            for (int i = 0; i < heightTriangle6; i++)
+            {
+                Console.SetCursorPosition(heightTriangle6 - i, i+100);
+
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("^");
+                }
+
+                Console.WriteLine();
+
+            }
+
+
         }
     }
 }
