@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "for", "for\for.csproj", "{4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "boxLoop", "boxLoop\boxLoop.csproj", "{7D649C08-E90A-43DC-BEE3-301DA15B0308}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ternaryOperator", "ternaryOperator\ternaryOperator.csproj", "{3D369CBD-11B9-476A-90FD-F8463795BD9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{7D649C08-E90A-43DC-BEE3-301DA15B0308}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D649C08-E90A-43DC-BEE3-301DA15B0308}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D649C08-E90A-43DC-BEE3-301DA15B0308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D369CBD-11B9-476A-90FD-F8463795BD9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D369CBD-11B9-476A-90FD-F8463795BD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D369CBD-11B9-476A-90FD-F8463795BD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D369CBD-11B9-476A-90FD-F8463795BD9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
