@@ -13,7 +13,7 @@ namespace ifElse
 
         static public void IfelseOne()
         {
-            bool isInfected;
+            // bool isInfected;
             Random rand = new Random();
 
             // isInfected = rand.Next(0, 2) == 0;
