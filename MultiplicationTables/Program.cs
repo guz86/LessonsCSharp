@@ -6,7 +6,7 @@ namespace MultiplicationTables
     {
         static void Main(string[] args)
         {
-            SimpleArray();
+            ArrayAndCycles();
         }
         static public void WithoutArrays()
         {
@@ -36,6 +36,33 @@ namespace MultiplicationTables
             Console.WriteLine("\t1 \t2");
             Console.WriteLine($"1\t{myArray[0, 0]}\t{myArray[0, 1]}");
             Console.WriteLine($"2\t{myArray[1, 0]}\t{myArray[1, 1]}");
+        }
+        static public void ArrayAndCycles()
+        {
+            int[,] myArray = new int[2, 2];
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                myArray[0, i] = (i + 1) * 1;
+            }
+            for (int i = 0; i < myArray.GetLength(1); i++)
+            {
+                myArray[1, i] = (i + 1) * 2;
+            }
+
+           
+            for (int i = 0; i < 2; i++)
+            {
+                // Console.Write("\t"+(i+1));
+                Console.Write($"\t{i+1}");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine($"{i + 1}\t{myArray[i, 0]}\t{myArray[i, 1]}");
+            }
+
+
         }
 
 
