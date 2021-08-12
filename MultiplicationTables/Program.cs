@@ -6,7 +6,7 @@ namespace MultiplicationTables
     {
         static void Main(string[] args)
         {
-            WithoutArrays();
+            SimpleArray();
         }
         static public void WithoutArrays()
         {
@@ -22,5 +22,22 @@ namespace MultiplicationTables
             Console.WriteLine($"2\t{x2_1}\t{x2_2}");
             
         }
+
+        static public void SimpleArray()
+        {
+            // глупое использование массива
+
+            int [,] myArray = new int[2, 2];
+            myArray[0,0] = 1 * 1; myArray[0,1] = 1 * 2;
+            myArray[1, 0] = 1 * 2; myArray[1, 1] = 2 * 2;
+
+
+
+            Console.WriteLine("\t1 \t2");
+            Console.WriteLine($"1\t{myArray[0, 0]}\t{myArray[0, 1]}");
+            Console.WriteLine($"2\t{myArray[1, 0]}\t{myArray[1, 1]}");
+        }
+
+
     }
 }
