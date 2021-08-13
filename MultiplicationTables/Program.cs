@@ -6,7 +6,7 @@ namespace MultiplicationTables
     {
         static void Main(string[] args)
         {
-            ArrayAndNestedLoops();
+            InputArrayAndNestedLoops();
         }
         static public void WithoutArrays()
         {
@@ -98,6 +98,48 @@ namespace MultiplicationTables
             }
 
         }
+
+        public static void InputArrayAndNestedLoops()
+        {
+            
+            Console.WriteLine("Введите значение:");
+            bool check = int.TryParse(Console.ReadLine(), out int inputUser);
+            if (!check)
+            {
+                Console.WriteLine("Ввели не цифру");
+            }
+            int[,] myArray = new int[inputUser, inputUser];
+            // пробегаемся по элементам массива и проставляем значения на основе i j
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    myArray[i, j] = (i + 1) * (j + 1);
+                }
+            }
+
+            // вывод
+            for (int i = 0; i < inputUser; i++)
+            {
+                // Console.Write("\t"+(i+1));
+                Console.Write($"\t{i + 1}");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < inputUser; i++)
+            {
+                //Console.WriteLine($"{i + 1}\t{myArray[i, 0]}\t{myArray[i, 1]}");
+
+                Console.Write($"{i + 1}");
+                for (int j = 0; j < inputUser; j++)
+                {
+                    Console.Write($"\t{ myArray[j, i]}");
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+
 
 
     }
