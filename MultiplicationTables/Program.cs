@@ -6,7 +6,7 @@ namespace MultiplicationTables
     {
         static void Main(string[] args)
         {
-            ArrayAndCycles();
+            ArrayAndNestedLoops();
         }
         static public void WithoutArrays()
         {
@@ -39,6 +39,7 @@ namespace MultiplicationTables
         }
         static public void ArrayAndCycles()
         {
+            // поочереди заполняем массив
             int[,] myArray = new int[2, 2];
 
             for (int i = 0; i < myArray.GetLength(0); i++)
@@ -50,7 +51,7 @@ namespace MultiplicationTables
                 myArray[1, i] = (i + 1) * 2;
             }
 
-           
+           // расширяемый вывод
             for (int i = 0; i < 2; i++)
             {
                 // Console.Write("\t"+(i+1));
@@ -62,6 +63,39 @@ namespace MultiplicationTables
                 Console.WriteLine($"{i + 1}\t{myArray[i, 0]}\t{myArray[i, 1]}");
             }
 
+
+        }
+
+        public static void ArrayAndNestedLoops()
+        {
+            int[,] myArray = new int[2, 2];
+            // пробегаемся по элементам массива и проставляем значения на основе i j
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (int j   = 0; j < myArray.GetLength(1); j++)
+                {
+                    myArray[i, j] = (i + 1) * (j + 1);
+                }
+            }
+
+            // вывод
+            for (int i = 0; i < 2; i++)
+            {
+                // Console.Write("\t"+(i+1));
+                Console.Write($"\t{i + 1}");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < 2; i++)
+            {
+                //Console.WriteLine($"{i + 1}\t{myArray[i, 0]}\t{myArray[i, 1]}");
+
+                Console.Write($"{i + 1}");
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.Write($"\t{ myArray[j, i]}");
+                }
+                Console.WriteLine();
+            }
 
         }
 
