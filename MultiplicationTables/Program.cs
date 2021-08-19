@@ -139,6 +139,11 @@ namespace MultiplicationTables
 
         }
 
+        public static void MethodsInputArrayAndNestedLoops()
+        {
+
+        }
+
 
 
 
