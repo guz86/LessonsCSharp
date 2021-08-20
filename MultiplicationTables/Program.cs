@@ -6,8 +6,69 @@ namespace MultiplicationTables
     {
         static void Main(string[] args)
         {
-            InputArrayAndNestedLoops();
+            MethodsInputArrayAndNestedLoops();
+
         }
+
+
+        public static void MethodsInputArrayAndNestedLoops()
+        {
+            
+            // ввод данных
+            int inputUserMethod = Init();
+            // создание и заполнение таблицы
+            int [,] myArrayMethod = CalcTable(inputUserMethod);
+            // вывод таблицы на экран
+            OutputTable(inputUserMethod, myArrayMethod);
+
+        }
+        public static int Init()
+        {
+            Console.WriteLine("Введите значение:");
+            bool check = int.TryParse(Console.ReadLine(), out int inputUser);
+            if (!check)
+            {
+                Console.WriteLine("Ввели не цифру");
+            } 
+            return inputUser;
+        }
+
+        public static int[,] CalcTable(int inputUser)
+        {
+            int[,] myArray = new int[inputUser, inputUser];
+            // пробегаемся по элементам массива и проставляем значения на основе i j
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    myArray[i, j] = (i + 1) * (j + 1);
+                }
+                
+            }
+            return myArray;
+        }
+        public static void OutputTable(int inputUser, int[,] myArray)
+        {
+            // вывод
+            for (int i = 0; i < inputUser; i++)
+            {
+                Console.Write($"\t{i + 1}");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < inputUser; i++)
+            {
+
+                Console.Write($"{i + 1}");
+                for (int j = 0; j < inputUser; j++)
+                {
+                    Console.Write($"\t{ myArray[j, i]}");
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+
         static public void WithoutArrays()
         {
             // таблица умножения 2 на 2 без массивов
@@ -117,7 +178,7 @@ namespace MultiplicationTables
                     myArray[i, j] = (i + 1) * (j + 1);
                 }
             }
-
+            
             // вывод
             for (int i = 0; i < inputUser; i++)
             {
@@ -139,10 +200,7 @@ namespace MultiplicationTables
 
         }
 
-        public static void MethodsInputArrayAndNestedLoops()
-        {
-
-        }
+        
 
 
 
