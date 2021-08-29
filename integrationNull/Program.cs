@@ -42,6 +42,19 @@ namespace integrationNull
 
             string result2 = str2 ??= "default string";
             Console.WriteLine("количество символов в str " + result2.Length);
+            // easy
+
+
+            string str2new = null;
+            str2new ??= string.Empty;
+            Console.WriteLine("количество символов в str " + str2new.Length);
+
+            //array
+            int[] myArray = null;
+            myArray ??= new int[0];
+            Console.WriteLine(myArray.Length);
+
+
 
         }
     }
