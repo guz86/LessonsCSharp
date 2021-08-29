@@ -33,6 +33,16 @@ namespace integrationNull
             Console.WriteLine(strNew ?? "нет данных в strNew");
 
 
+
+
+            //
+            // оператор присваивания объединения со значением null ??=
+
+            string str2 = null;
+
+            string result2 = str2 ??= "default string";
+            Console.WriteLine("количество символов в str " + result2.Length);
+
         }
     }
 }
