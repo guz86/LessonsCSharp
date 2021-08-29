@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "boxLoop", "boxLoop\boxLoop.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ternaryOperator", "ternaryOperator\ternaryOperator.csproj", "{3D369CBD-11B9-476A-90FD-F8463795BD9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplicationTables", "MultiplicationTables\MultiplicationTables.csproj", "{06972CB4-68FF-4DFC-AF28-BBAD30C80940}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplicationTables", "MultiplicationTables\MultiplicationTables.csproj", "{06972CB4-68FF-4DFC-AF28-BBAD30C80940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "integrationNull", "integrationNull\integrationNull.csproj", "{7EF9081E-CE59-4A85-B06C-3FE43944D4E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{06972CB4-68FF-4DFC-AF28-BBAD30C80940}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06972CB4-68FF-4DFC-AF28-BBAD30C80940}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06972CB4-68FF-4DFC-AF28-BBAD30C80940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF9081E-CE59-4A85-B06C-3FE43944D4E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF9081E-CE59-4A85-B06C-3FE43944D4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF9081E-CE59-4A85-B06C-3FE43944D4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF9081E-CE59-4A85-B06C-3FE43944D4E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
