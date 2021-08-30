@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace integrationNull
 {
@@ -54,6 +55,14 @@ namespace integrationNull
             myArray ??= new int[0];
             Console.WriteLine(myArray.Length);
 
+
+            //
+            // оператор условного null  ?.
+
+            //Console.WriteLine(myArray3.Length);
+            // unhandled exception необработанное исключение
+            int [] myArray3 = null;
+            Console.WriteLine("Сумма элементов массива myArray3 " + (myArray3?.Sum() ?? 0));
 
 
         }
