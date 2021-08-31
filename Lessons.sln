@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplicationTables", "Mul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "integrationNull", "integrationNull\integrationNull.csproj", "{7EF9081E-CE59-4A85-B06C-3FE43944D4E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "refHomeWrk", "refHomeWrk\refHomeWrk.csproj", "{6D68E290-DB55-4007-B095-D38D264EFD78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{7EF9081E-CE59-4A85-B06C-3FE43944D4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EF9081E-CE59-4A85-B06C-3FE43944D4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EF9081E-CE59-4A85-B06C-3FE43944D4E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D68E290-DB55-4007-B095-D38D264EFD78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D68E290-DB55-4007-B095-D38D264EFD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D68E290-DB55-4007-B095-D38D264EFD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D68E290-DB55-4007-B095-D38D264EFD78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
