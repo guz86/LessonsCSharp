@@ -13,7 +13,7 @@ namespace refHomeWrk
             int length = myArray.Length;
 
 
-            int[] Array2 = { 5, 3, 2, 66 };
+            string[] Array2 = { "DDD", "GD", "FDD", "SD" };
             //Array.Resize(ref Array2,20);
             Resize(ref Array2, element);
             int length2 = Array2.Length;
@@ -43,9 +43,9 @@ namespace refHomeWrk
             arr = temparr;
         }
 
-        static void Resize(ref int[] arr, int element)
+        static void Resize<T>(ref T[] arr, int element)
         {
-            int[] temparr = new int[element];
+            T[] temparr = new T[element];
             for (int i = 0; i < arr.Length && i < temparr.Length; i++)
             {
                 temparr[i] = arr[i];
