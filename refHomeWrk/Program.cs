@@ -8,13 +8,15 @@ namespace refHomeWrk
         {
             // int[] myArray = new int[5];
             int[] myArray = { 1, 2, 3, 66 };
-            int element = 22;
+            int element = 2;
             MyResize(ref myArray, element);
             int length = myArray.Length;
 
 
             int[] Array2 = { 5, 3, 2, 66 };
             //Array.Resize(ref Array2,20);
+            Resize(ref Array2, element);
+            int length2 = Array2.Length;
 
 
 
@@ -41,9 +43,14 @@ namespace refHomeWrk
             arr = temparr;
         }
 
-        static int[] Resize(ref int[] arr, int element)
+        static void Resize(ref int[] arr, int element)
         {
-            return arr;
+            int[] temparr = new int[element];
+            for (int i = 0; i < arr.Length && i < temparr.Length; i++)
+            {
+                temparr[i] = arr[i];
+            }
+            arr = temparr;
         }
 
 
