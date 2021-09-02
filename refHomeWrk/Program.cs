@@ -8,13 +8,20 @@ namespace refHomeWrk
         {
             // int[] myArray = new int[5];
             int[] myArray = { 1, 2, 3, 66 };
-            int element = 2;
-            myArray = Resize(ref myArray, element);
+            int element = 22;
+            MyResize(ref myArray, element);
             int length = myArray.Length;
+
+
+            int[] Array2 = { 5, 3, 2, 66 };
+            //Array.Resize(ref Array2,20);
+
+
+
         }
 
         //Написать метод Resize изменяющий количество элементов массива(метод должен иметь возможность увеличить или уменьшить количество элментов массива)
-        static int[] Resize(ref int[] arr, int element)
+        static void MyResize(ref int[] arr, int element)
         {
             int [] temparr = new int[element];
             int lengthArray = 0;
@@ -31,8 +38,14 @@ namespace refHomeWrk
             {
                   temparr[i] = arr[i];
             }
-            return temparr;
+            arr = temparr;
         }
+
+        static int[] Resize(ref int[] arr, int element)
+        {
+            return arr;
+        }
+
 
         // array.Resize
 
