@@ -13,10 +13,17 @@ namespace refHomeWrk
             int length = myArray.Length;
 
 
+
             string[] Array2 = { "DDD", "GD", "FDD", "SD" };
             //Array.Resize(ref Array2,20);
             Resize(ref Array2, element);
             int length2 = Array2.Length;
+
+
+
+            int elementValue = 55;
+            AddElementBegin(ref myArray, elementValue);
+            int length3 = myArray.Length;
 
 
 
@@ -54,12 +61,26 @@ namespace refHomeWrk
         }
 
 
-        // array.Resize
+        //Написать методы для добавления элемента по указанному индексу
 
 
 
 
-        //Написать методы для добавления элемента в начало массива, в конец массива и по указанному индексу
+        //Написать методы для добавления элемента в начало массива
+        static void AddElementBegin(ref int[] arr, int elementValue)
+        {
+            int[] tempArray = new int[arr.Length+1];
+            tempArray[0] = elementValue;
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                tempArray[i] = arr[i];
+            }
+            arr = tempArray;
+        }
+
+
+
         //Написать методы для удаления первого элемента массива, последнего элемента массива и элемента по указанному индексу.
 
 
