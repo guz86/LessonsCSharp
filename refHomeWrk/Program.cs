@@ -26,8 +26,11 @@ namespace refHomeWrk
 
             int[] myArray2 = { 1, 1, 1, 2, 3, 66 };
             int elementValue2 = 35;
-            int elementIndex = myArray2.Length;
+            int elementIndex = 3;
             AddElementIndex(ref myArray2, elementIndex, elementValue2);
+            AddValue(ref myArray2, elementIndex, elementValue2);
+            AddFirst(ref myArray2, elementValue2);
+            AddLast(ref myArray2, elementValue2);
             int length4 = myArray2.Length;
 
 
@@ -65,13 +68,12 @@ namespace refHomeWrk
         }
 
 
-        //Написать методы для удаления первого элемента массива, последнего элемента массива и элемента по указанному индексу.
 
         // 1 Написать методы для добавления элемента по указанному индексу
         static void AddElementIndex(ref int[] arr, int index, int value)
         {     
             int[] tempArray = new int[arr.Length + 1];
-            for (int i = 0, j =0 ; i < arr.Length + 1;  i++, j++)
+            for (int i = 0, j = 0 ; i < arr.Length + 1;  i++, j++)
             {
                 if (i == index)
                 {
@@ -99,8 +101,36 @@ namespace refHomeWrk
             arr = tempArray;
         }
 
-        
 
+        // 3 по учебнику Написать методы для добавления элемента по указанному индексу
+
+        static void AddValue(ref int [] arr, int index, int value)
+        {
+            int[] temparr = new int[arr.Length+1];
+            temparr[index] = value;
+            for (int i = 0; i < index; i++)
+            {
+                temparr[i] = arr[i];
+            }
+            for (int i = index; i < arr.Length; i++)
+            {
+                temparr[i + 1] = arr[i];
+            }
+            arr = temparr;
+        }
+        
+        static void AddFirst(ref int[] arr, int value)
+        {
+            AddValue(ref arr, 0, value);
+        }
+        static void AddLast(ref int[] arr, int value)
+        {
+            AddValue(ref arr, arr.Length, value);
+        }
+
+
+
+        //Написать методы для удаления первого элемента массива, последнего элемента массива и элемента по указанному индексу.
 
 
 
