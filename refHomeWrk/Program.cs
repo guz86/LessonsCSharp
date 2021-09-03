@@ -34,6 +34,7 @@ namespace refHomeWrk
             DelElement(ref myArray2, elementIndex);
             DelElementFirst(ref myArray2);
             DelElementLast(ref myArray2);
+            DelElementDZ(ref myArray2, elementIndex);
             int length4 = myArray2.Length;
 
 
@@ -159,7 +160,20 @@ namespace refHomeWrk
             DelElement(ref arr, arr.Length-1);
         }
 
+        static void DelElementDZ(ref int[] arr, int index)
+        {
+            int[] tempArr = new int[arr.Length - 1];
 
+            for (int i = 0; i < index; i++)
+            {
+                tempArr[i] = arr[i];
+            }
+            for (int i = index + 1; i < arr.Length; i++)
+            {
+                tempArr[i - 1] = arr[i];
+            }
+            arr = tempArr;
+        }
 
 
     }
