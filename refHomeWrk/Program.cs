@@ -31,6 +31,9 @@ namespace refHomeWrk
             AddValue(ref myArray2, elementIndex, elementValue2);
             AddFirst(ref myArray2, elementValue2);
             AddLast(ref myArray2, elementValue2);
+            DelElement(ref myArray2, elementIndex);
+            DelElementFirst(ref myArray2);
+            DelElementLast(ref myArray2);
             int length4 = myArray2.Length;
 
 
@@ -132,9 +135,29 @@ namespace refHomeWrk
 
         //Написать методы для удаления первого элемента массива, последнего элемента массива и элемента по указанному индексу.
 
+        static void DelElement(ref int [] arr, int index)
+        {
+            int[] tempArr = new int[arr.Length - 1];
 
+            for (int i = 0; i < index; i++)
+            {
+                tempArr[i] = arr[i];
+            }
+            for (int i = index; i < arr.Length - 1; i++)
+            {
+                tempArr[i] = arr[i+1];
+            }
+            arr = tempArr;
+        }
 
-
+        static void DelElementFirst(ref int[] arr)
+        {
+            DelElement(ref arr, 0);
+        }
+        static void DelElementLast(ref int[] arr)
+        {
+            DelElement(ref arr, arr.Length-1);
+        }
 
 
 
