@@ -30,7 +30,7 @@ namespace STOPWATCH
             Console.WriteLine($"Time: {sm.ElapsedMilliseconds}");
 
 
-            sm.Restart();
+            sm.Restart(); // reset start
             System.Threading.Thread.Sleep(500);
             sm.Stop();
             Console.WriteLine($"Time: {sm.ElapsedMilliseconds}");
