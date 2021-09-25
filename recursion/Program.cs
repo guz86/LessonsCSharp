@@ -7,7 +7,7 @@ namespace recursion
         static void Foo(int i)
         {
             Console.WriteLine(i);
-            if (i>=3)
+            if (i >= 3)
             {
                 return;
             }
@@ -15,9 +15,47 @@ namespace recursion
             i++;
             Foo(i);
         }
+
+
+
+
+        class Item
+        {
+            public int Value { get; set; }
+            public Item Child { get; set; }
+
+
+        }
+
+        static Item InitItem()
+        {
+            return new Item
+            {
+                Value = 5,
+                Child = new Item
+                {
+                    Value = 4,
+                    Child = new Item
+                    {
+                        Value = 2
+                    }
+                }
+            };
+        }
+
+
+
         static void Main(string[] args)
         {
-            Foo(0);
+            // Foo(0);
+            Item item = InitItem();
         }
+
+
+
+
     }
+
+
+
 }
