@@ -61,7 +61,12 @@ namespace recursion
         {
             // Foo(0);
             Item item = InitItem();
-            Print(item);
+            // Print(item);
+
+            for (Item i = item; i != null; i = i.Child)
+            {
+                Console.WriteLine(i.Value);
+            }
         }
 
 
