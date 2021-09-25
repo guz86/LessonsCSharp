@@ -48,7 +48,7 @@ namespace recursion
 
             Console.WriteLine(item.Value);
 
-            if (item.Child != null)
+            if (item.Child == null)
             {
                 return;
             }
