@@ -43,12 +43,24 @@ namespace recursion
             };
         }
 
+        static void Print(Item item)
+        {
 
+            Console.WriteLine(item.Value);
+
+            if (item.Child != null)
+            {
+                return;
+            }
+
+            Print(item.Child);
+        }
 
         static void Main(string[] args)
         {
             // Foo(0);
             Item item = InitItem();
+            Print(item);
         }
 
 
