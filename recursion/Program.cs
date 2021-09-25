@@ -4,14 +4,20 @@ namespace recursion
 {
     class Program
     {
-        static void Foo()
+        static void Foo(int i)
         {
-            Console.WriteLine("Foo");
-            Foo();
+            Console.WriteLine(i);
+            if (i>=3)
+            {
+                return;
+            }
+
+            i++;
+            Foo(i);
         }
         static void Main(string[] args)
         {
-            Foo();
+            Foo(0);
         }
     }
 }
