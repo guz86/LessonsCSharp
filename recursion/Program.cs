@@ -46,14 +46,15 @@ namespace recursion
         static void Print(Item item)
         {
 
-            Console.WriteLine(item.Value);
+           
 
-            if (item.Child == null)
+            if (item != null)
             {
-                return;
+                Console.WriteLine(item.Value);
+                Print(item.Child);
             }
 
-            Print(item.Child);
+            
         }
 
         static void Main(string[] args)
