@@ -41,6 +41,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParamsCSharp", "ParamsCShar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "optionalParametersOfTheMethod", "optionalParametersOfTheMethod\optionalParametersOfTheMethod.csproj", "{97ACB205-70AC-4A6D-B517-E2617038B0E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recursion", "recursion\recursion.csproj", "{C08F89C8-9317-4DFC-AD2B-C1D9ECD2697B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{97ACB205-70AC-4A6D-B517-E2617038B0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97ACB205-70AC-4A6D-B517-E2617038B0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97ACB205-70AC-4A6D-B517-E2617038B0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C08F89C8-9317-4DFC-AD2B-C1D9ECD2697B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08F89C8-9317-4DFC-AD2B-C1D9ECD2697B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08F89C8-9317-4DFC-AD2B-C1D9ECD2697B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08F89C8-9317-4DFC-AD2B-C1D9ECD2697B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
