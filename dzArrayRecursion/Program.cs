@@ -9,19 +9,26 @@ namespace dzArrayRecursion
         {
             int[] myArray = { 1, 2, 1, 4, 5, 6, 7, 8 };
 
-            Output(myArray,0);
+            Output(myArray);
             
         }
 
-        static void Output(int [] array, int i)
+        static void Output(int [] array, int i = 0)
         {
-            Console.WriteLine(array[i]);
-            if (i >= array.Length-1)
+            //
+            //if (i >= array.Length-1)
+            //{
+            //    return;
+            //}
+            //i++;
+            //Output(array, i);
+
+            if (i < array.Length)
             {
-                return;
+                Console.WriteLine(array[i]);
+                Output(array, i+1);
             }
-            i++;
-            Output(array, i);
+
         }
     }
 }
