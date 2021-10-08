@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "optionalParametersOfTheMeth
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "recursion", "recursion\recursion.csproj", "{C08F89C8-9317-4DFC-AD2B-C1D9ECD2697B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dzArrayRecursion", "dzArrayRecursion\dzArrayRecursion.csproj", "{19A51A00-B427-4AFD-A65B-BB8B44E64AC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dzArrayRecursion", "dzArrayRecursion\dzArrayRecursion.csproj", "{19A51A00-B427-4AFD-A65B-BB8B44E64AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DzSumElementsArrayRecursion", "DzSumElementsArrayRecursion\DzSumElementsArrayRecursion.csproj", "{841650DF-9664-4A12-82EE-DB04621FF086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{19A51A00-B427-4AFD-A65B-BB8B44E64AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A51A00-B427-4AFD-A65B-BB8B44E64AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A51A00-B427-4AFD-A65B-BB8B44E64AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841650DF-9664-4A12-82EE-DB04621FF086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841650DF-9664-4A12-82EE-DB04621FF086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841650DF-9664-4A12-82EE-DB04621FF086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841650DF-9664-4A12-82EE-DB04621FF086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
