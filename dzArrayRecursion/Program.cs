@@ -5,6 +5,7 @@ namespace dzArrayRecursion
     class Program
     {
         // вывод массива с помощью рекурсии
+        // array output by recursion
         static void Main(string[] args)
         {
             int[] myArray = { 1, 2, 1, 4, 5, 6, 7, 8 };
