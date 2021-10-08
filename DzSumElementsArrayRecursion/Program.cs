@@ -8,9 +8,11 @@ namespace DzSumElementsArrayRecursion
         // Find the sum of array elements using recursion
         static void Main(string[] args)
         {
-             int[] myArray  = {1,1,3,3,3,5,6,2,3,5 };
-            SumArray(myArray); 
+             int[] myArray  = {1,1,2 };
+            SumArray(myArray);
+            Console.WriteLine(SumArrayV2(myArray));
             
+
         }
         static void SumArray(int [] array, int i = 0, int result = 0)
         {
@@ -27,6 +29,18 @@ namespace DzSumElementsArrayRecursion
             }
 
 
+        }
+
+        // вариант из урока
+        // version from training
+
+        static int SumArrayV2(int[] array, int i = 0)
+        {
+            if (i>=array.Length)
+            return 0;
+            
+            int result = SumArrayV2(array, i + 1);
+            return array[i]+result;
         }
     }
 }
