@@ -14,7 +14,10 @@ namespace DZsumOfNumbersRecurtion
             SumOfNumbersV1(numbers);
             SumOfNumbersV2(numbers);
             Console.WriteLine(SumOfNumbersV3(numbers2));
-            SumOfNumbersLesson(numbers);
+            Console.WriteLine(SumOfNumbersLesson(numbers));
+            Console.WriteLine(SumOfNumbersLesson2(numbers));
+            Console.WriteLine(SumOfNumbersLesson3(numbers));
+
 
         }
         static void SumOfNumbersV1(int numbers)
@@ -49,11 +52,38 @@ namespace DZsumOfNumbersRecurtion
 
 
         }
- 
-        static int SumOfNumbersV3(string num) => num.Length > 0 ? Convert.ToInt32(num[0] - '0') + SumOfNumbersV3(num[1..]) : 0;
-        static void SumOfNumbersLesson(int numbers)
-        {
 
+        // 56 1;
+        static int SumOfNumbersV3(string num) => num.Length > 0 ? Convert.ToInt32(num[0] - '0') + SumOfNumbersV3(num[1..]) : 0;
+        static int SumOfNumbersLesson(int numbers)
+        {
+            if (numbers < 10)
+            {
+                return numbers;
+            }
+            int digit = numbers % 10;
+            int nextDigit = numbers / 10;
+
+            return digit + SumOfNumbersLesson(nextDigit);
+        }
+
+        static int SumOfNumbersLesson2(int numbers)
+        {
+            if (numbers < 10)
+                return numbers;
+            return numbers % 10 + SumOfNumbersLesson(numbers / 10);
+        }
+
+        static int SumOfNumbersLesson3(int numbers)
+        {
+            int result = 0;
+            while (numbers > 0)
+            {
+                result += numbers % 10;
+                numbers = numbers / 10;
+            }
+
+            return result;
         }
 
     }
