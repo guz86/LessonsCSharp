@@ -47,6 +47,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dzArrayRecursion", "dzArray
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DzSumElementsArrayRecursion", "DzSumElementsArrayRecursion\DzSumElementsArrayRecursion.csproj", "{841650DF-9664-4A12-82EE-DB04621FF086}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZsumOfNumbersRecurtion", "DZsumOfNumbersRecurtion\DZsumOfNumbersRecurtion.csproj", "{4013BEAA-2D82-49EA-9F80-4D78D8AE5D9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{841650DF-9664-4A12-82EE-DB04621FF086}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{841650DF-9664-4A12-82EE-DB04621FF086}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{841650DF-9664-4A12-82EE-DB04621FF086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4013BEAA-2D82-49EA-9F80-4D78D8AE5D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4013BEAA-2D82-49EA-9F80-4D78D8AE5D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4013BEAA-2D82-49EA-9F80-4D78D8AE5D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4013BEAA-2D82-49EA-9F80-4D78D8AE5D9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
