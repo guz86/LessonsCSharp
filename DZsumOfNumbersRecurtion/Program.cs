@@ -19,6 +19,9 @@ namespace DZsumOfNumbersRecurtion
             Console.WriteLine(SumOfNumbersLesson3(numbers));
 
 
+            // преобразование
+            char foo = '2';
+            int bar = foo - '0';
         }
         static void SumOfNumbersV1(int numbers)
         {
