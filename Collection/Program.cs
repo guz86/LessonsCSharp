@@ -24,6 +24,12 @@ namespace Collection
             numbers.RemoveAt(2);
             // первый попавшийся
             numbers.Remove(5);
+            // лучше через if
+
+            if (numbers.Remove(7)) // возращает true если находит и удаляет first occurence
+            {
+                // yes
+            }
 
             foreach (var item in numbers)
             {
