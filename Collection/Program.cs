@@ -9,6 +9,7 @@ namespace Collection
         {
             // List ; однотипные объекты
             List<int> numbers = new List<int>(3);
+
             //var numbers2 = new List<int>(5);
             numbers.Add(5);
             numbers.Add(2);
@@ -44,9 +45,21 @@ namespace Collection
             {
                 Console.WriteLine($"элемент List  = {item}");
             }
+
+            // короткая запись
+            var list1 = new List<string>() {"Hello", "HI"};
+            // c#9
+             List<string> socialNetworks = new() { "YouTube", "Facebook", "Instagram" };
+             List<int> numbers2 = new();
+
+
+
+
+
+
         }
 
-
+        
         //Queue ;
         //Stack ;
         //Dictionary

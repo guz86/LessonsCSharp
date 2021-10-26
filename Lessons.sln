@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DzSumElementsArrayRecursion
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZsumOfNumbersRecurtion", "DZsumOfNumbersRecurtion\DZsumOfNumbersRecurtion.csproj", "{4013BEAA-2D82-49EA-9F80-4D78D8AE5D9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection", "Collection\Collection.csproj", "{669BC8FC-14BD-4557-8DD7-751CE8F4205D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collection", "Collection\Collection.csproj", "{669BC8FC-14BD-4557-8DD7-751CE8F4205D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{853C747D-B2D1-479D-8E6D-860703CE5E95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{669BC8FC-14BD-4557-8DD7-751CE8F4205D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{669BC8FC-14BD-4557-8DD7-751CE8F4205D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{669BC8FC-14BD-4557-8DD7-751CE8F4205D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853C747D-B2D1-479D-8E6D-860703CE5E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853C747D-B2D1-479D-8E6D-860703CE5E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853C747D-B2D1-479D-8E6D-860703CE5E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853C747D-B2D1-479D-8E6D-860703CE5E95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
