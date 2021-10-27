@@ -85,9 +85,26 @@ namespace Collection
                 Console.WriteLine($"arrayfood - {item}");
             }
 
+
+            // List of objects
+
+            List<Animal> Animals = new List<Animal>();
+            Animals.Add(new Animal("Bobby", 5));
+            Animals.Add(new Animal("Larry", 12));
+            Animals.Add(new Animal("Mike", 3));
+
+            foreach (var animal in Animals)
+            {
+                Console.WriteLine($"Name: {animal._name} Age : {animal._age}");
+            }
+
         }
 
-        
+
+
+
+
+
         //Queue ;
         //Stack ;
         //Dictionary
