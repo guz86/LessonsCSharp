@@ -98,6 +98,29 @@ namespace Collection
                 Console.WriteLine($"Name: {animal._name} Age : {animal._age}");
             }
 
+
+
+            // Queue ; Очередь, первый вошел, первый вышел.
+
+            Queue <string> people = new Queue<string>();
+            people.Enqueue("Алексей");
+            people.Enqueue("Владимир");
+            people.Enqueue("Иван");
+
+            foreach (var item in people)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine($"Уходит {people.Dequeue()}"); // извлекаем элемент
+            Console.WriteLine($"Следующий - {people.Peek()}");
+            Console.WriteLine($"Уходит {people.Dequeue()}"); // извлекаем элемент
+            Console.WriteLine($"Следующий - {people.Peek()}");
+
+            // Stack ; 
+
+
+
         }
 
 
@@ -105,8 +128,8 @@ namespace Collection
 
 
 
-        //Queue ;
-        //Stack ;
+
+
         //Dictionary
 
     }
