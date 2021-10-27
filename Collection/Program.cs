@@ -48,14 +48,42 @@ namespace Collection
 
             // короткая запись
             var list1 = new List<string>() {"Hello", "HI"};
+
             // c#9
-             List<string> socialNetworks = new() { "YouTube", "Facebook", "Instagram" };
-             List<int> numbers2 = new();
+            List<string> list2 = new() { "Hello", "HI" };
+            List<string> socialNetworks = new() { "YouTube", "Facebook", "Instagram" };
+            List<int> numbers2 = new();
 
+            // array List
+            string[] food = new string[3];
+            food[0] = "pizza";
+            food[1] = "pasta";
+            food[2] = "BORZH";
 
+            for (int i = 0; i < food.Length; i++)
+            {
+                Console.WriteLine(food[i]);
+            }
 
+            var foods = new List<string>(3) {"pizza","pasta" };
+            foods.Add("Borzh");
+            for (int i = 0; i < foods.Count; i++)
+            {
+                Console.WriteLine(foods[i]);
+            }
 
-
+            foods.Sort();
+            foreach (string item in foods)
+            {
+                Console.WriteLine($"food - {item}");
+            }
+            foods.Reverse();
+            // List to Array
+            string[] foodArray = foods.ToArray();
+            foreach (string item in foodArray)
+            {
+                Console.WriteLine($"arrayfood - {item}");
+            }
 
         }
 
