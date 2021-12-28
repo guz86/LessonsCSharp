@@ -10,6 +10,8 @@ namespace dickoop
     {
         private float _length;
         private float _radius;
+        private Ball _leftBall;
+        private Ball _rightBall;
 
         //private float _radius = 3f;
 
@@ -19,6 +21,17 @@ namespace dickoop
             _radius = radius;
             //_radius = 3f;
 
+            _leftBall = new Ball(3f, 200f);
+            _leftBall = new Ball(5f, 300f);
+        }
+
+        public void Cut(float amount)
+        {
+            _length -= amount;
+            if (_length < 0)
+            {
+                _length = 0;
+            }
         }
     }
 }
