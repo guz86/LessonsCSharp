@@ -51,7 +51,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZsumOfNumbersRecurtion", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collection", "Collection\Collection.csproj", "{669BC8FC-14BD-4557-8DD7-751CE8F4205D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{853C747D-B2D1-479D-8E6D-860703CE5E95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test", "test\test.csproj", "{853C747D-B2D1-479D-8E6D-860703CE5E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dickoop", "dickoop\dickoop.csproj", "{1B48933F-1B28-4EDC-B129-52B6852A9AD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{853C747D-B2D1-479D-8E6D-860703CE5E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{853C747D-B2D1-479D-8E6D-860703CE5E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{853C747D-B2D1-479D-8E6D-860703CE5E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B48933F-1B28-4EDC-B129-52B6852A9AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B48933F-1B28-4EDC-B129-52B6852A9AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B48933F-1B28-4EDC-B129-52B6852A9AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B48933F-1B28-4EDC-B129-52B6852A9AD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

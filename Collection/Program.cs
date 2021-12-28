@@ -119,9 +119,58 @@ namespace Collection
 
             // Stack ; 
 
+            Stack<int> numerals = new Stack<int>();
+            numerals.Push(0);
+            numerals.Push(1);
+            numerals.Push(2);
+            numerals.Push(3);
+            numerals.Push(4);
+
+            foreach (int num in numerals)
+            {
+                Console.WriteLine(num);
+            } // 4 3 2 1 0 
+
+            Console.WriteLine($"Элементов: {numerals.Count}");
+
+            while (numerals.Count > 0 )
+            {
+                Console.WriteLine($"Вышел {numerals.Pop()}"); // извлечение из стека
+            }
+
+            Console.WriteLine($"Элементов: {numerals.Count}");
 
 
-        }
+
+            //Dictionary Словарь
+
+            Dictionary<string, string> countries = new Dictionary<string, string>();
+            countries.Add("Россия", "Москва");
+            countries.Add("Беларусь", "Минск");
+
+            foreach (var item in countries)
+            {
+                Console.WriteLine($"Страна - {item.Key}, столица - {item.Value}");
+            }
+
+            countries.Remove("Россия");
+
+            foreach (var item in countries.Values)
+            {
+                Console.WriteLine($"Столица - {item}");
+            }
+            //
+            Dictionary<int, string> humans = new Dictionary<int, string>() 
+            {
+                {1,"Alice" },
+                {2,"John" }
+            };
+
+            string nameHumanOne = humans[1];
+
+
+
+    }
 
 
 
@@ -130,7 +179,7 @@ namespace Collection
 
 
 
-        //Dictionary
+
 
     }
 }
