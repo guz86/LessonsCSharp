@@ -10,8 +10,5 @@ namespace dickoop
         }
     }
 
-    class Dick
-    {
 
-    }
 }
