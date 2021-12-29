@@ -32,6 +32,7 @@ namespace dickoop
             {
                 _length = 0;
             }
+            Console.WriteLine($"Режем: {amount}");
         }
 
         public override void Brake()
@@ -39,6 +40,17 @@ namespace dickoop
             base.Brake();
             _leftBall.Brake();
             _rightBall.Brake();
+            Console.WriteLine("Разбиваем");
+        }
+
+        public override void ShowInfo()
+        {
+            Console.Write("Dick: ");
+            base.ShowInfo();
+            Console.Write($"L: {_length}, R {_radius} | ");
+            _leftBall.ShowInfo();
+            _rightBall.ShowInfo();
+            Console.WriteLine();
         }
     }
 }

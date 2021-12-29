@@ -17,5 +17,11 @@ namespace dickoop
             _sperm = sperm;
 
         }
+        public override void ShowInfo()
+        {
+            Console.Write("Ball: ");
+            base.ShowInfo();
+            Console.Write($"R: {_radius}, Q: {_sperm}. | ");
+        }
     }
 }

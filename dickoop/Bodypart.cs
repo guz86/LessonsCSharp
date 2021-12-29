@@ -15,5 +15,9 @@ namespace dickoop
             _health = 0;
 
         }
+        public virtual void ShowInfo()
+        {
+            Console.Write($"Health: {_health}. ");
+        }
     }
 }
