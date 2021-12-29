@@ -8,7 +8,7 @@ namespace dickoop
 {
     class Bodypart
     {
-        private float _health;
+        private float _health = 100f;
 
         public void Brake()
         {
