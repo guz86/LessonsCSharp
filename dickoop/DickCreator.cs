@@ -14,6 +14,7 @@ namespace dickoop
             for (int i = 0; i < 10; i++)
             {
                 dick = new Dick(20f, 3f);
+                dick.ShowInfo();
             }
         }
     }
