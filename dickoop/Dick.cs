@@ -22,7 +22,7 @@ namespace dickoop
             //_radius = 3f;
 
             _leftBall = new Ball(3f, 200f);
-            _leftBall = new Ball(5f, 300f);
+            _rightBall = new Ball(5f, 300f);
         }
 
         public void Cut(float amount)
