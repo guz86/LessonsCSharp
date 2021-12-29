@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dickoop
 {
-    class Ball
+    class Ball : Bodypart
     {
         private float _radius;
         private float _sperm;

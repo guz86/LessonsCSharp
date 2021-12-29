@@ -10,7 +10,7 @@ namespace dickoop
     {
         private float _health = 100f;
 
-        public void Brake()
+        public virtual void Brake()
         {
             _health = 0;
 

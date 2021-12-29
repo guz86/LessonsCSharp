@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dickoop
 {
-    class Dick
+    class Dick : Bodypart
     {
         private float _length;
         private float _radius;
@@ -32,6 +32,13 @@ namespace dickoop
             {
                 _length = 0;
             }
+        }
+
+        public override void Brake()
+        {
+            base.Brake();
+            _leftBall.Brake();
+            _rightBall.Brake();
         }
     }
 }
