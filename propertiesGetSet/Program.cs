@@ -12,7 +12,7 @@ namespace propertiesGetSet
             point.SetX(15);
             Console.WriteLine(point.GetX());
             //
-            point.Y = 8;
+            // point.Y = 8;
             int x = point.Y;
         }
     }

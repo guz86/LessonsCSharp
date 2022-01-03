@@ -13,6 +13,7 @@ namespace propertiesGetSet
         public Point()
         {
             _x = 1;
+            Y = 99;
         }
 
         public int GetX()
@@ -55,15 +56,15 @@ namespace propertiesGetSet
         public int Y
         {
             get { return y; }
-            set {
+            private set {
                 if (value < 1)
                 {
                     y = 1;
                     return;
                 }
-                if (value > 1)
+                if (value > 10)
                 {
-                    y = 5;
+                    y = 10;
                     return;
                 }
                 y = value; }
