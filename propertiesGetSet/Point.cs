@@ -24,6 +24,7 @@ namespace propertiesGetSet
         public void  SetX(int x)
         {
             // от 1 до 5
+            // организация взаимодействия с полем через инкапсуляцию
 
             if (x < 1)
             {
@@ -37,7 +38,28 @@ namespace propertiesGetSet
             }
             _x = x;
 
-            
         }
+
+        // свойства get set
+        // propfull TAB
+        // private int myVar;
+
+        // public int MyProperty
+        //{
+        //    get { return myVar; }
+        //    set { myVar = value; }
+        //}
+
+        private int y;
+
+        public int Y
+        {
+            get { return y; }
+            set { y = value; }
+        }
+
+
+
+
     }
 }

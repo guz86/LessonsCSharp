@@ -11,6 +11,9 @@ namespace propertiesGetSet
             Console.WriteLine(point.GetX());
             point.SetX(15);
             Console.WriteLine(point.GetX());
+            //
+            point.Y = 4;
+            int x = point.Y;
         }
     }
 }
