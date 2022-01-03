@@ -9,7 +9,8 @@ namespace propertiesGetSet
             Point point = new Point();
 
             Console.WriteLine(point.GetX());
-            point.SetX(10);  
+            point.SetX(15);
+            Console.WriteLine(point.GetX());
         }
     }
 }
