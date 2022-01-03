@@ -14,6 +14,8 @@ namespace propertiesGetSet
             //
             // point.Y = 8;
             int x = point.Y;
+            //point.Z = 10;
+            int t = point.Z;
         }
     }
 }

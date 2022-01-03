@@ -14,6 +14,7 @@ namespace propertiesGetSet
         {
             _x = 1;
             Y = 99;
+            Z = 8;
         }
 
         public int GetX()
@@ -51,26 +52,38 @@ namespace propertiesGetSet
         //    set { myVar = value; }
         //}
 
-        private int y;
+        private int _y;
 
         public int Y
         {
-            get { return y; }
+            get { return _y; }
             private set {
                 if (value < 1)
                 {
-                    y = 1;
+                    _y = 1;
                     return;
                 }
                 if (value > 10)
                 {
-                    y = 10;
+                    _y = 10;
                     return;
                 }
-                y = value; }
+                _y = value; }
         }
 
+        // автоматические свойства
 
+        //private int _z;
+
+        //public int Z
+        //{
+        //    get { return _z; }
+        //    set { _z = value; }
+        //}
+
+        // prop TAB
+
+        public int Z { get; private set; }
 
 
     }
