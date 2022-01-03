@@ -8,7 +8,7 @@ namespace propertiesGetSet
         {
             Point point = new Point();
 
-            point.GetX();
+            Console.WriteLine(point.GetX());
             point.SetX(10);  
         }
     }

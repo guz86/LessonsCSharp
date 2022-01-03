@@ -10,6 +10,11 @@ namespace propertiesGetSet
     {
         private int _x;
 
+        public Point()
+        {
+            _x = 1;
+        }
+
         public int GetX()
         {
             return _x;
