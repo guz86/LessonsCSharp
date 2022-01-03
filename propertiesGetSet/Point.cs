@@ -55,7 +55,18 @@ namespace propertiesGetSet
         public int Y
         {
             get { return y; }
-            set { y = value; }
+            set {
+                if (value < 1)
+                {
+                    y = 1;
+                    return;
+                }
+                if (value > 1)
+                {
+                    y = 5;
+                    return;
+                }
+                y = value; }
         }
 
 
