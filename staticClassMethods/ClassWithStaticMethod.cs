@@ -56,6 +56,11 @@ namespace staticClassMethods
             private set {  counter = value; }
         }
 
+        public static int GetCounter()
+        {
+            return counter;
+        }
+
         
 
 
