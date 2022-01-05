@@ -10,11 +10,12 @@ namespace staticClassMethods
     {
         public static void Foo()
         {
-
+            Console.WriteLine("Foo");
         }
 
         public void Bar()
         {
+            Console.WriteLine("Bar");
 
         }
     }
