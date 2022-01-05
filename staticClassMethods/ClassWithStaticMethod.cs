@@ -61,6 +61,10 @@ namespace staticClassMethods
             return counter;
         }
 
+        public int GetObjectCount()
+        {
+            return counter;
+        }
         
 
 
