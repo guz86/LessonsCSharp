@@ -59,6 +59,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "propertiesGetSet", "propert
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "staticClassField", "staticClassField\staticClassField.csproj", "{41186A16-FDEE-4847-AFC0-832C6E7A1118}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "staticClassMethods", "staticClassMethods\staticClassMethods.csproj", "{415E5480-4D48-4F6C-A33E-03FFBEE300C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{41186A16-FDEE-4847-AFC0-832C6E7A1118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41186A16-FDEE-4847-AFC0-832C6E7A1118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41186A16-FDEE-4847-AFC0-832C6E7A1118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415E5480-4D48-4F6C-A33E-03FFBEE300C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415E5480-4D48-4F6C-A33E-03FFBEE300C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415E5480-4D48-4F6C-A33E-03FFBEE300C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415E5480-4D48-4F6C-A33E-03FFBEE300C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
