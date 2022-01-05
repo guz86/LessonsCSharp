@@ -38,13 +38,25 @@ namespace staticClassMethods
 
         // подсчет количества экземпляров/ пример 
 
+        // конструктор, при вызыве увеличиваем статическое поле
+        public ClassWithStaticMethod()
+        {
+            //counter++;
+            // не на прямую а через свойство
+            Counter++;
+        }
+
+
         private static int counter;
 
         public static int Counter
         {
             get { return counter; }
-            set { counter = value; }
+            // убираем возможность внести изменения извне
+            private set {  counter = value; }
         }
+
+        
 
 
     }
