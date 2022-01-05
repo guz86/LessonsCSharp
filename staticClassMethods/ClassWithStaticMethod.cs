@@ -8,15 +8,20 @@ namespace staticClassMethods
 {
     class ClassWithStaticMethod
     {
+        private static int _a;
         public static void Foo()
         {
             Console.WriteLine("Foo");
+            _a = 5;
+            Console.WriteLine(_a);
         }
 
         public void Bar()
         {
             Console.WriteLine("Bar");
-
+            _a = 11;
+            Console.WriteLine(_a);
+            Foo();
         }
     }
 }

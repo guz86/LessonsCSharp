@@ -11,6 +11,7 @@ namespace staticClassMethods
 
             class1.Bar();
             ClassWithStaticMethod.Foo();
+            class1.Bar();
         }
     }
 }
