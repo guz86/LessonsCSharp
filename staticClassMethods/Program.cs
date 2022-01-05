@@ -15,6 +15,9 @@ namespace staticClassMethods
 
             ClassWithStaticMethod._B = 511;
             Console.WriteLine(ClassWithStaticMethod._B);
+
+            // подсчет количества экземпляров/ пример 
+
         }
     }
 }
