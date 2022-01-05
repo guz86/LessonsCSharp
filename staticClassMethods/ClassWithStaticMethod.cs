@@ -9,6 +9,7 @@ namespace staticClassMethods
     class ClassWithStaticMethod
     {
         private static int _a;
+
         public static void Foo()
         {
             Console.WriteLine("Foo");
@@ -23,5 +24,16 @@ namespace staticClassMethods
             Console.WriteLine(_a);
             Foo();
         }
+
+
+        private static int _b;
+        // статические свойства
+        public static int _B
+        {
+            get { return _b; }
+            set { _b = value; }
+        }
+
+
     }
 }

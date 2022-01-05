@@ -12,6 +12,9 @@ namespace staticClassMethods
             class1.Bar();
             ClassWithStaticMethod.Foo();
             class1.Bar();
+
+            ClassWithStaticMethod._B = 511;
+            Console.WriteLine(ClassWithStaticMethod._B);
         }
     }
 }
