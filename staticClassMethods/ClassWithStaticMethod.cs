@@ -8,6 +8,14 @@ namespace staticClassMethods
 {
     class ClassWithStaticMethod
     {
+        public static void Foo()
+        {
 
+        }
+
+        public void Bar()
+        {
+
+        }
     }
 }
