@@ -65,7 +65,13 @@ namespace staticClassMethods
         {
             return counter;
         }
-        
+
+        public int ObjectCount
+        {
+            get { return counter; }
+        }
+
+
 
 
     }

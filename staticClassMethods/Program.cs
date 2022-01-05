@@ -25,6 +25,8 @@ namespace staticClassMethods
             Console.WriteLine(ClassWithStaticMethod.Counter); 
             // или через метод экземпляра класса
             Console.WriteLine(counterClass2.GetObjectCount());
+            // через поле объекта
+            Console.WriteLine(counterClass.ObjectCount);
         }
     }
 }
