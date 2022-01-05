@@ -9,7 +9,21 @@ namespace staticClassField
     class ClassWithStaticField
     {
         // Статические поля класса
-        public int a;
-        public static int b;
+        //public int a;
+        private static int _b;
+
+        public void SetB(int b)
+        {
+            // ClassWithStaticField.b = b;
+            _b = b;
+        }
+
+        public void PrintB()
+        {
+            Console.WriteLine(_b);
+        }
+
     }
+
+
 }
