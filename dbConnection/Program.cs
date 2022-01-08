@@ -6,7 +6,8 @@ namespace dbConnection
     {
         static void Main(string[] args)
         {
-            
+            var dbRepository = new DbRepository();
+            dbRepository.GetInfo();
         }
     }
 }

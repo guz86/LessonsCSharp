@@ -8,6 +8,12 @@ namespace dbConnection
 {
     class DbRepository
     {
+        // поле. строка подключения к бд
+        public static string connectionString = "local DB";
 
+        public void GetInfo()
+        {
+            Console.WriteLine(connectionString);
+        }
     }
 }
