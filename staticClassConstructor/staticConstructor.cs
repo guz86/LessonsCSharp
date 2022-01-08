@@ -17,6 +17,7 @@ namespace staticClassConstructor
         public StaticConstructor(int a)
         {
             Console.WriteLine(a);
+            
         }
 
         // статический конструктор
@@ -26,6 +27,13 @@ namespace staticClassConstructor
         static StaticConstructor()
         {
             Console.WriteLine("Статический конструктор");
+            
+        }
+
+        // статический метод
+        public static void Foo()
+        {
+            Console.WriteLine("Foo");
         }
     }
 }
