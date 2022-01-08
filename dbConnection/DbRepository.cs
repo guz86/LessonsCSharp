@@ -9,7 +9,14 @@ namespace dbConnection
     class DbRepository
     {
         // поле. строка подключения к бд
-        public static string connectionString = "local DB";
+        //public static string connectionString = "local DB";
+        public static string connectionString;
+
+        static DbRepository()
+        {
+            var configurationManager = new ConfigurationManager();
+            connectionString = configurationManager.GetConnectionString();
+        }
 
         public void GetInfo()
         {
