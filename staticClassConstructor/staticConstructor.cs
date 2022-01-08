@@ -6,9 +6,26 @@ using System.Threading.Tasks;
 
 namespace staticClassConstructor
 {
-    class staticConstructor
+    class StaticConstructor
     {
-        // статический конструктор
 
+        public StaticConstructor()
+        {
+            Console.WriteLine("Обычный конструктор");
+        }
+        // перегрузка
+        public StaticConstructor(int a)
+        {
+            Console.WriteLine(a);
+        }
+
+        // статический конструктор
+        // модификаторы доступа не используются
+        // только один в классе
+        // не может принимать параметров
+        static StaticConstructor()
+        {
+            Console.WriteLine("Статический конструктор");
+        }
     }
 }
