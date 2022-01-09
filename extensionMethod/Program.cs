@@ -10,6 +10,7 @@ namespace extensionMethod
             Console.WriteLine(currentDateTime);
             currentDateTime.Print();
 
+            DateTime.Now.Print();
         }
     }
 }
