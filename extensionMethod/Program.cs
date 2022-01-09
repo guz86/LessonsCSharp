@@ -11,6 +11,9 @@ namespace extensionMethod
             currentDateTime.Print();
 
             DateTime.Now.Print();
+
+            Console.WriteLine(DateTime.Now.IsDayOfWeek(DayOfWeek.Monday));
+            Console.WriteLine(currentDateTime.IsDayOfWeek(DayOfWeek.Sunday));
         }
     }
 }
