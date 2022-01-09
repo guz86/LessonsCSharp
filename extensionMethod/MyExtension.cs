@@ -10,7 +10,10 @@ namespace extensionMethod
     {
         // методы расширения должны быть статическими
         // и находиться в статическом классе
-
+        public static void Print(this DateTime dateTime)
+        {
+            Console.WriteLine(dateTime);
+        }
     }
 }
  

@@ -6,8 +6,10 @@ namespace extensionMethod
     {
         static void Main(string[] args)
         {
-            DateTime CurrentDateTime = DateTime.Now;
-            Console.WriteLine(CurrentDateTime);
+            DateTime currentDateTime = DateTime.Now;
+            Console.WriteLine(currentDateTime);
+            currentDateTime.Print();
+
         }
     }
 }
