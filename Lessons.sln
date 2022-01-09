@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "staticClassConstructor", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbConnection", "dbConnection\dbConnection.csproj", "{24267C5B-AECD-423F-86FE-E241820A0C1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extensionMethod", "extensionMethod\extensionMethod.csproj", "{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{24267C5B-AECD-423F-86FE-E241820A0C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24267C5B-AECD-423F-86FE-E241820A0C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24267C5B-AECD-423F-86FE-E241820A0C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
