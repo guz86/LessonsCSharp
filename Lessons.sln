@@ -65,9 +65,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "staticClassConstructor", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbConnection", "dbConnection\dbConnection.csproj", "{24267C5B-AECD-423F-86FE-E241820A0C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extensionMethod", "extensionMethod\extensionMethod.csproj", "{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionStudent", "ExtensionStudent\ExtensionStudent.csproj", "{7BF54A51-AC8A-42A3-9EE5-6EA4AFCCE9AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethod", "extensionMethod\ExtensionMethod.csproj", "{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -203,10 +201,6 @@ Global
 		{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7BF54A51-AC8A-42A3-9EE5-6EA4AFCCE9AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7BF54A51-AC8A-42A3-9EE5-6EA4AFCCE9AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7BF54A51-AC8A-42A3-9EE5-6EA4AFCCE9AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7BF54A51-AC8A-42A3-9EE5-6EA4AFCCE9AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

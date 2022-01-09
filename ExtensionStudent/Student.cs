@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace ExtensionStudent
 {
-    class Program
+    sealed class Student
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
-
 }

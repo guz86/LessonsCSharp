@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace extensionMethod
+namespace ExtensionMethod
 {
     class Program
     {
