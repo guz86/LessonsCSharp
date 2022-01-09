@@ -23,7 +23,7 @@ namespace ExtensionMethod
 
         public static string GetFullName(this Student student)
         {
-            return student.FirstName + student.LastName;
+            return student.FirstName +" "+ student.LastName;
         }
     }
 }

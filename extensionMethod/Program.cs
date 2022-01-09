@@ -1,4 +1,5 @@
 ﻿using System;
+using ExtensionStudent;
 
 namespace ExtensionMethod
 {
@@ -14,6 +15,9 @@ namespace ExtensionMethod
 
             Console.WriteLine(DateTime.Now.IsDayOfWeek(DayOfWeek.Monday));
             Console.WriteLine(currentDateTime.IsDayOfWeek(DayOfWeek.Sunday));
+
+            Student student = new Student() { FirstName = "Иван", LastName = "Иванов"};
+            Console.WriteLine(student.GetFullName());
         }
     }
 }
