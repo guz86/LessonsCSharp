@@ -8,6 +8,14 @@ namespace ConstReadonly
 {
     class Car
     {
+        public void StartEngine()
+        {
 
+        }
+
+        public void Drive()
+        {
+
+        }
     }
 }
