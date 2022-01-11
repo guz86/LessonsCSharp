@@ -12,5 +12,15 @@ namespace ConstReadonly
         {
             Console.WriteLine($"{DateTime.Now}\t|INFO|\t{message}");
         }
+
+        public void Error(string message)
+        {
+            Console.WriteLine($"{DateTime.Now}\t|ERROR|\t{message}");
+        }
+
+        public void Warning(string message)
+        {
+            Console.WriteLine($"{DateTime.Now}\t|WARNING|\t{message}");
+        }
     }
 }
