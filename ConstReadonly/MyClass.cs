@@ -19,7 +19,9 @@ namespace ConstReadonly
 
         // не readonly является неявно статическим
         public readonly int b;
-        public readonly int с = 3;
+        public readonly int c = 3;
+        public static readonly int d;
+        public readonly int f = 55;
 
 
 
@@ -28,10 +30,23 @@ namespace ConstReadonly
         {
             this.b = b;
         }
+        // статический конструктор который будет вызван только один раз для
+        // инициализации статических полей
+        static MyClass()
+        {
+            d = 100;
+        }
 
         public void Foo()
         {
-            Console.WriteLine(MY_ERROR);
+
+            Console.WriteLine("-----Foo------");
+            Console.WriteLine($"MY_ERROR - {MY_ERROR}");
+            Console.WriteLine($"a - {a}");
+            Console.WriteLine($"b - {b}");
+            Console.WriteLine($"c - {c}");
+            Console.WriteLine($"d - {d}");
+            Console.WriteLine("-----Foo------");
         }
     }
 }
