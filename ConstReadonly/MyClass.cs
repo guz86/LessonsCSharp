@@ -23,10 +23,10 @@ namespace ConstReadonly
 
 
 
-
-        public MyClass()
+        // данные для readonly мы можем получить в конструкторе
+        public MyClass(int b)
         {
-
+            this.b = b;
         }
 
         public void Foo()
