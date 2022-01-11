@@ -18,7 +18,13 @@ namespace ConstReadonly
         // некий сервис который будет использовать Car под свои нужды
         private readonly MyLogger _myLogger;
 
+        private bool isEngineStarted;
 
+
+        public Car(MyLogger myLogger)
+        {
+            _myLogger = myLogger;
+        }
 
         public void StartEngine()
         {

@@ -16,6 +16,10 @@ namespace ConstReadonly
             Console.WriteLine(myClass.b);
 
             Console.WriteLine(MyClass.d);
+
+
+            Car car = new Car(new MyLogger());
+            car.Drive();
         }
     }
 }
