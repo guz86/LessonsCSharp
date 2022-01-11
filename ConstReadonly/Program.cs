@@ -10,6 +10,8 @@ namespace ConstReadonly
             
             MyClass myClass = new MyClass();
             myClass.Foo();
+            // MyClass.c
+            Console.WriteLine(myClass.с);
         }
     }
 }

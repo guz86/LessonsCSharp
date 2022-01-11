@@ -14,6 +14,13 @@ namespace ConstReadonly
         private const string MY_ERROR = "some error";
         public const int MAX_VALUE = 42;
 
+        // не знаем данные до компиляции, а узнаем данные которые нельзя изменять
+        // в момент выполнения программы
+
+        // не readonly является неявно статическим
+        public readonly int b;
+        public readonly int с = 3;
+
 
 
 
