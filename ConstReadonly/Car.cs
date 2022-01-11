@@ -28,7 +28,17 @@ namespace ConstReadonly
 
         public void StartEngine()
         {
+            _myLogger.Info(ATTEMPT_TO_START_ENGINE_MESSAGE);
 
+            if (isEngineStarted)
+            {
+                _myLogger.Warning(ENGINE_IS_ALREADY_STARTED_MESSAGE);
+            }
+            else
+            {
+                isEngineStarted = true;
+                _myLogger.Info(ENGINE_IS_START_MESSAGE);
+            }
         }
 
         public void Drive()

@@ -20,6 +20,7 @@ namespace ConstReadonly
 
             Car car = new Car(new MyLogger());
             car.Drive();
+            car.StartEngine();
         }
     }
 }
