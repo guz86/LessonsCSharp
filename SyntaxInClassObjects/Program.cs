@@ -6,11 +6,18 @@ namespace SyntaxInClassObjects
     {
         static void Main(string[] args)
         {
-            Cat cat = new Cat();
+            Cat cat1 = new Cat();
 
-            cat.Age = 5;
-            cat.Name = "Boris";
+            cat1.Age = 5;
+            cat1.Name = "Boris";
+
+            Cat cat2 = new Cat
+            {
+                Age = 5, 
+                Name = "Maks"
+            };
 
         }
     }
 }
+ 
