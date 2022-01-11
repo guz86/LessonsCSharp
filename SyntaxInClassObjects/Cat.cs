@@ -12,6 +12,7 @@ namespace SyntaxInClassObjects
         public int Age { get; set; }
         public string Name { get; set; }
 
+        public Owner Owner { get; set; }
         public Cat()
         {
 
