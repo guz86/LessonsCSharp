@@ -29,6 +29,11 @@ namespace SyntaxInClassObjects
                 }
             };
 
+            Cat cat3 = new Cat("Tom")
+            {
+                Age = 3
+            };
+
         }
     }
 }

@@ -18,5 +18,10 @@ namespace SyntaxInClassObjects
 
         }
 
+        public Cat(string name)
+        {
+            Name = name;
+        }
+
     }
 }
