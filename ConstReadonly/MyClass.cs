@@ -8,6 +8,15 @@ namespace ConstReadonly
 {
     class MyClass
     {
+        public const int a = 10;
+        public MyClass()
+        {
 
+        }
+
+        public void Foo()
+        {
+
+        }
     }
 }
