@@ -43,7 +43,16 @@ namespace ConstReadonly
 
         public void Drive()
         {
+            _myLogger.Info(ATTEMPT_TO_DRIVE_MESSAGE);
 
+            if (isEngineStarted)
+            {
+                _myLogger.Info(DRIVE_MESSAGE);
+            }
+            else
+            {
+                _myLogger.Error(DRIVE_ERROR_MESSAGE);
+            }
         }
     }
 }
