@@ -57,23 +57,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dickoop", "dickoop\dickoop.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "propertiesGetSet", "propertiesGetSet\propertiesGetSet.csproj", "{D959194E-C283-47B2-9B95-7AA7F18E1D10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "staticClassField", "staticClassField\staticClassField.csproj", "{41186A16-FDEE-4847-AFC0-832C6E7A1118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "staticClassField", "staticClassField\staticClassField.csproj", "{41186A16-FDEE-4847-AFC0-832C6E7A1118}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "staticClassMethods", "staticClassMethods\staticClassMethods.csproj", "{415E5480-4D48-4F6C-A33E-03FFBEE300C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "staticClassMethods", "staticClassMethods\staticClassMethods.csproj", "{415E5480-4D48-4F6C-A33E-03FFBEE300C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "staticClassConstructor", "staticClassConstructor\staticClassConstructor.csproj", "{0AAAEB03-D13E-4687-B7FF-A0591A62BDDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "staticClassConstructor", "staticClassConstructor\staticClassConstructor.csproj", "{0AAAEB03-D13E-4687-B7FF-A0591A62BDDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbConnection", "dbConnection\dbConnection.csproj", "{24267C5B-AECD-423F-86FE-E241820A0C1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dbConnection", "dbConnection\dbConnection.csproj", "{24267C5B-AECD-423F-86FE-E241820A0C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethod", "extensionMethod\ExtensionMethod.csproj", "{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethod", "extensionMethod\ExtensionMethod.csproj", "{55F085D6-213D-4AC8-AE90-2EBA2FBB0E50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstReadonly", "ConstReadonly\ConstReadonly.csproj", "{BB698214-E1BE-41D3-943F-134298883D63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConstReadonly", "ConstReadonly\ConstReadonly.csproj", "{BB698214-E1BE-41D3-943F-134298883D63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntaxInClassObjects", "SyntaxInClassObjects\SyntaxInClassObjects.csproj", "{ACD0B119-6CE0-47CB-91DF-78B9FEAF9DD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SyntaxInClassObjects", "SyntaxInClassObjects\SyntaxInClassObjects.csproj", "{ACD0B119-6CE0-47CB-91DF-78B9FEAF9DD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{06C9AD32-C3E6-4597-87EE-E06DAD0E4713}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{06C9AD32-C3E6-4597-87EE-E06DAD0E4713}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance2", "Inheritance2\Inheritance2.csproj", "{32DD73D0-0482-4C46-AD41-EB78E2F3EEF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance2", "Inheritance2\Inheritance2.csproj", "{32DD73D0-0482-4C46-AD41-EB78E2F3EEF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "Base\Base.csproj", "{4F0ABD41-8F38-421E-AA44-0E833199E259}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{32DD73D0-0482-4C46-AD41-EB78E2F3EEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32DD73D0-0482-4C46-AD41-EB78E2F3EEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32DD73D0-0482-4C46-AD41-EB78E2F3EEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F0ABD41-8F38-421E-AA44-0E833199E259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0ABD41-8F38-421E-AA44-0E833199E259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0ABD41-8F38-421E-AA44-0E833199E259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0ABD41-8F38-421E-AA44-0E833199E259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
