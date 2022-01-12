@@ -37,6 +37,8 @@ namespace Inheritance
                 LastName = "Romanov"
             };
 
+            PrintFullName(student1);
+
             
         }
     }
