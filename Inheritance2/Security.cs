@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Inheritance2
 {
-    class Security : Person
+    class Security : Employee
     {
         public void Guard()
         {
-            Console.WriteLine("Охраняю");
+            Console.WriteLine("Охраняет");
         }
     }
 }

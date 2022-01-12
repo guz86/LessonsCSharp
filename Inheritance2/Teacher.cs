@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheritance2
 {
-    class Teacher
+    class Teacher : Employee
     {
         public void Teach()
         {
