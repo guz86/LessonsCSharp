@@ -8,6 +8,8 @@ namespace Inheritance2
         {
             Person person1 = new Person { FirstName = "Danil", LastName = "Bodrov" };
             person1.PrintFullName();
+
+            // add new item class diogram
         }
     }
 }
