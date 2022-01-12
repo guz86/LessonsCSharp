@@ -8,6 +8,9 @@ namespace Inheritance
 {
     class Student : Person
     {
-
+        public void Learn()
+        {
+            Console.WriteLine(FirsName + " учится");
+        }
     }
 }

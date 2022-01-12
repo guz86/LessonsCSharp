@@ -14,6 +14,7 @@ namespace Inheritance
 
             person1.PrintFirstName();
 
+
             Student student1 = new Student
             {
                 FirsName = "Alex",
@@ -21,6 +22,7 @@ namespace Inheritance
             };
 
             student1.PrintFirstName();
+            student1.Learn();
         }
     }
 }
