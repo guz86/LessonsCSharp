@@ -12,6 +12,9 @@ namespace Base
                 Y = 1,
                 Z = 3
             };
+
+            Point2D point2 = new Point2D(1,3);
+            Point2D point3 = new Point3D();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Base
 {
     class Point3D : Point2D
     {
-        public Point3D()
+        public Point3D() :base(4,6)
         {
             Console.WriteLine("Вызван конструктор класса Point3D");
         }
