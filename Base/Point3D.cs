@@ -18,7 +18,8 @@ namespace Base
 
         public void Print3D()
         {
-            base.Print2D();
+            //base.Print2D();
+            Print2D();
             Console.WriteLine($"Z: {Z}");
         }
     }
