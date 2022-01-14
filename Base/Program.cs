@@ -14,7 +14,8 @@ namespace Base
             //};
 
             Point2D point2 = new Point2D(1,3);
-            Point2D point3 = new Point3D(1,2,4);
+            Point3D point3 = new Point3D(1,2,4);
+            point3.Print3D();
         }
     }
 }

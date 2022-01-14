@@ -15,5 +15,11 @@ namespace Base
             Console.WriteLine("Вызван конструктор класса Point3D");
         }
         public int Z { get; set; }
+
+        public void Print3D()
+        {
+            base.Print2D();
+            Console.WriteLine($"Z: {Z}");
+        }
     }
 }
