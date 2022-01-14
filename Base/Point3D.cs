@@ -8,7 +8,8 @@ namespace Base
 {
     class Point3D : Point2D
     {
-        public Point3D(int x, int y, int z) :base(x,y)
+        // int x, int y, передаются в конструктор базового класса Point2D
+        public Point3D(int x, int y, int z) : base(x, y)
         {
             Z = z;
             Console.WriteLine("Вызван конструктор класса Point3D");
