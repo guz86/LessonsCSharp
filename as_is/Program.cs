@@ -10,6 +10,9 @@ namespace as_is
             point1.X = 1;
             point1.Y = 5;
             point1.Print();
+
+            Object obj = new Point { X = 5, Y = 4 };
+            
         }
     }
 }
