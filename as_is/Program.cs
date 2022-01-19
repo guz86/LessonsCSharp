@@ -19,7 +19,26 @@ namespace as_is
             point.X = 2;
             point.Print();
 
-            
+            Console.WriteLine("---------------");
+
+            // оператор as
+
+            static void Foo(Object obj)
+            {
+                Point point2 = obj as Point;
+                if (point2 != null)
+                {
+                    point2.Print();
+                }
+            }
+            Object obj2 = new Point { X = 1, Y = 1 };
+            Foo(obj2);
+            object obj3 = " ";
+            Foo(obj3);
+
+            // оператор is
+
+
         }
     }
 }
