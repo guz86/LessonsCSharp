@@ -36,8 +36,20 @@ namespace as_is
             object obj3 = " ";
             Foo(obj3);
 
+            Console.WriteLine("---------------");
             // оператор is
 
+            static void Bar(Object obj)
+            {
+                //if (obj is Point)
+                if (obj is Point point)
+                {
+                    //Point point = (Point)obj;
+                    point.Print();
+                }
+            }
+
+            Bar(obj2);
 
         }
     }
