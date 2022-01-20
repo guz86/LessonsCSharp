@@ -8,9 +8,14 @@ namespace VirtualMethods
 {
     class Car
     {
+        private void StartEngine()
+        {
+            Console.WriteLine("Двигатель запущен");
+        }
         // переопределяем метод
         public virtual void Drive()
         {
+            StartEngine();
             Console.WriteLine("Машина едет");
         }
     }
