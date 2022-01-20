@@ -8,5 +8,10 @@ namespace VirtualMethods
 {
     class SportCar : Car
     {
+        public override void Drive()
+        {
+            //base.Drive();
+            Console.WriteLine("Спорткар едет быстро");
+        }
     }
 }
