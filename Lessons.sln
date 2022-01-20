@@ -77,7 +77,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance2", "Inheritance
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base", "Base\Base.csproj", "{4F0ABD41-8F38-421E-AA44-0E833199E259}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "as_is", "as_is\as_is.csproj", "{361379D3-F93B-406A-B730-F511D21BEF5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "as_is", "as_is\as_is.csproj", "{361379D3-F93B-406A-B730-F511D21BEF5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiers", "AccessModifiers\AccessModifiers.csproj", "{C4E24797-5091-4490-850E-41187E460916}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -237,6 +239,10 @@ Global
 		{361379D3-F93B-406A-B730-F511D21BEF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{361379D3-F93B-406A-B730-F511D21BEF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{361379D3-F93B-406A-B730-F511D21BEF5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E24797-5091-4490-850E-41187E460916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E24797-5091-4490-850E-41187E460916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E24797-5091-4490-850E-41187E460916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E24797-5091-4490-850E-41187E460916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
