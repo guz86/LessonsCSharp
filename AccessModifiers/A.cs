@@ -12,9 +12,11 @@ namespace AccessModifiers
         private int privateField;
         protected int protectedField;
 
-        protected void Foo()
+        public void Foo()
         {
-
+            Console.WriteLine(publicField);
+            Console.WriteLine(privateField);
+            Console.WriteLine(protectedField);
         }
 
         protected int MyProperty { get; set; }
