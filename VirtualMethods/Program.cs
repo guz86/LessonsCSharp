@@ -8,6 +8,7 @@ namespace VirtualMethods
         {
             Person person = new Person();
             person.Drive(new Car());
+            person.Drive(new SportCar());
 
         }
     }
