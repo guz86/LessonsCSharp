@@ -8,7 +8,7 @@ namespace VirtualMethods
 {
     class Car
     {
-        private void StartEngine()
+        protected virtual void StartEngine()
         {
             Console.WriteLine("Двигатель запущен");
         }
