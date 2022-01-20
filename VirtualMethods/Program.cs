@@ -6,7 +6,9 @@ namespace VirtualMethods
     {
         static void Main(string[] args)
         {
-           
+            Person person = new Person();
+            person.Drive(new Car());
+
         }
     }
 }
