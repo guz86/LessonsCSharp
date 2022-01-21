@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceWeapon
 {
-    abstract class Weapon
+    abstract class Weapon : IHasInfo
     {
         public abstract int Damage { get; }
         public abstract void Fire();
