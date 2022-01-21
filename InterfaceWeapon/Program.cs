@@ -15,7 +15,7 @@ namespace InterfaceWeapon
                 player.CheckInfo(weapon);
                 player.Fire(weapon);
             }
-
+            player.CheckInfo(new Box());
         }
     }
 }
