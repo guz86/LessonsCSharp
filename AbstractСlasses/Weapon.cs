@@ -9,6 +9,11 @@ namespace AbstractСlasses
     abstract class Weapon
     {
         public abstract void Fire();
-
+        public void ShowInfo()
+        {
+            Console.WriteLine(GetType().Name);
+        }
     }
+
+
 }

@@ -13,7 +13,9 @@ namespace AbstractСlasses
 
             foreach (var weapon in weapons)
             {
+                weapon.ShowInfo();
                 player.Fire(weapon);
+                Console.WriteLine(weapon.GetType().Name);
             }
 
         }
