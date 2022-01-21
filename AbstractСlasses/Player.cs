@@ -13,5 +13,10 @@ namespace AbstractСlasses
         {
             weapon.Fire();
         }
+
+        public void CheckInfo(Weapon weapon)
+        {
+            weapon.ShowInfo();
+        }
     }
 }
