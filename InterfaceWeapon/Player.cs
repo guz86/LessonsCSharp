@@ -8,7 +8,7 @@ namespace InterfaceWeapon
 {
     class Player
     {
-        public void Fire(Weapon weapon)
+        public void Fire(IWeapon weapon)
         {
             weapon.Fire();
         }
