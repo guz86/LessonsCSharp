@@ -6,6 +6,8 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
+            IDataProcessor dataProcessor = new ConsoleDataProcessor();
+            
             
         }
     }
