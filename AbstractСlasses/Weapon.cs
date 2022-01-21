@@ -8,6 +8,7 @@ namespace AbstractСlasses
 {
     abstract class Weapon
     {
+        public abstract int Damage { get; }
         public abstract void Fire();
         public void ShowInfo()
         {

@@ -8,6 +8,8 @@ namespace AbstractСlasses
 {
     class Bazooka : Weapon
     {
+        public override int Damage { get { return 100; } }
+
         public override void Fire()
         {
             Console.WriteLine("БАААХ");

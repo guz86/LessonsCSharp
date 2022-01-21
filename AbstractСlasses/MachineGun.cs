@@ -8,6 +8,8 @@ namespace AbstractСlasses
 {
     class MachineGun : Weapon
     {
+        public override int Damage => 44;
+
         public override void Fire()
         {
             Console.WriteLine("Тра та та та та");
