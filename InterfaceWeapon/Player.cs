@@ -13,9 +13,9 @@ namespace InterfaceWeapon
             weapon.Fire();
         }
 
-        public void CheckInfo(Weapon weapon)
+        public void CheckInfo(IHasInfo hasInfo)
         {
-            weapon.ShowInfo();
+            hasInfo.ShowInfo();
         }
     }
 }
