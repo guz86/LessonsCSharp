@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace AbstractСlasses
 {
-    //class Player
-    class Player
+    abstract class Weapon
     {
-        public void Fire(Weapon weapon)
-        {
-            weapon.Fire();
-        }
+        public abstract void Fire();
+
     }
 }

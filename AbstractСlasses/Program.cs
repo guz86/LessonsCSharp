@@ -6,7 +6,8 @@ namespace AbstractСlasses
     {
         static void Main(string[] args)
         {
-            //Player player = new Player();
+             Player player = new Player();
+            player.Fire(new Gun());
         }
     }
 }

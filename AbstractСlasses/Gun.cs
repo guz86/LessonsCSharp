@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace AbstractСlasses
 {
-    //class Player
-    class Player
+    class Gun : Weapon
     {
-        public void Fire(Weapon weapon)
+        public override void Fire()
         {
-            weapon.Fire();
+            Console.WriteLine("Пыщь");
         }
     }
 }
