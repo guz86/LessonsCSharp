@@ -15,7 +15,7 @@ namespace AbstractСlasses
             {
                 player.CheckInfo(weapon);
                 player.Fire(weapon);
-                Console.WriteLine(weapon.GetType().FullName);
+                //Console.WriteLine(weapon.GetType().FullName);
             }
 
         }

@@ -12,7 +12,7 @@ namespace AbstractСlasses
         public abstract void Fire();
         public void ShowInfo()
         {
-            Console.WriteLine(GetType().Name);
+            Console.WriteLine($"{GetType().Name} Damage: {Damage}");
         }
     }
 
