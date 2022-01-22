@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BenchTest
 {
-    class MyParser
+    public class MyParser
     {
         public int TryCathParse(string str)
         {
