@@ -87,7 +87,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractСlasses", "Abstrac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{B42E7D0F-2128-4FC4-8A84-54265BCD507A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceWeapon", "InterfaceWeapon\InterfaceWeapon.csproj", "{25E6AC01-8A15-4F67-8CC8-1F8268EFF8BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceWeapon", "InterfaceWeapon\InterfaceWeapon.csproj", "{25E6AC01-8A15-4F67-8CC8-1F8268EFF8BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarkdotnet", "Benchmarkdotnet\Benchmarkdotnet.csproj", "{AEEC5C0C-243D-4BAF-A0F9-803AC9A4AB94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -267,6 +269,10 @@ Global
 		{25E6AC01-8A15-4F67-8CC8-1F8268EFF8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25E6AC01-8A15-4F67-8CC8-1F8268EFF8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25E6AC01-8A15-4F67-8CC8-1F8268EFF8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEEC5C0C-243D-4BAF-A0F9-803AC9A4AB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEC5C0C-243D-4BAF-A0F9-803AC9A4AB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEC5C0C-243D-4BAF-A0F9-803AC9A4AB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEC5C0C-243D-4BAF-A0F9-803AC9A4AB94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
