@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BenchmarkdotnetTest
+namespace BenchTest
 {
     class MyParser
     {
@@ -41,6 +41,4 @@ namespace BenchmarkdotnetTest
             return result;
         }
     }
-
-
 }
