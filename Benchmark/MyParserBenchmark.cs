@@ -17,5 +17,14 @@ namespace Benchmark
 
         
         private MyParser myParser = new MyParser();
+
+        [Benchmark]
+        public void TryCatchParseTestWithError()
+        {
+            int result = myParser.TryCathParse(STRING_TO_PARSE_WITH_ERROR);
+
+        }
+        [Benchmark]
+
     }
 }
