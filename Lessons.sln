@@ -89,9 +89,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceWeapon", "InterfaceWeapon\InterfaceWeapon.csproj", "{25E6AC01-8A15-4F67-8CC8-1F8268EFF8BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarkdotnet", "Benchmarkdotnet\Benchmarkdotnet.csproj", "{AEEC5C0C-243D-4BAF-A0F9-803AC9A4AB94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkdotnetTest", "Benchmarkdotnet\BenchmarkdotnetTest.csproj", "{AEEC5C0C-243D-4BAF-A0F9-803AC9A4AB94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "Benchmark\Benchmark.csproj", "{7D3C15C4-073B-40C0-902B-FB0CAD9E519C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark", "Benchmark\Benchmark.csproj", "{7D3C15C4-073B-40C0-902B-FB0CAD9E519C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

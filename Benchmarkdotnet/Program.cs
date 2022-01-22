@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Benchmarkdotnet
+namespace BenchmarkdotnetTest
 {
     class Program
     {
