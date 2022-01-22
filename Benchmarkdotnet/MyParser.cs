@@ -21,6 +21,17 @@ namespace Benchmarkdotnet
             }
             return result;
         }
+
+        public int TryParse(string str)
+        {
+            int result;
+            if (!int.TryParse(str, out result))
+            {
+                result = 0;
+            }
+
+            return result;
+        }
     }
 
 
