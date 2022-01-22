@@ -10,7 +10,9 @@ using BenchTest;
 
 namespace Benchmark
 {
-    class MyParserBenchmark
+    [MemoryDiagnoser]
+    [RankColumn]
+    public class MyParserBenchmark
     {
         private const string STRING_TO_PARSE_WITH_ERROR = "sdfsdf3";
         private const string STRING_TO_PARSE = "44";
