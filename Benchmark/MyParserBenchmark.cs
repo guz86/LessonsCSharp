@@ -36,5 +36,11 @@ namespace Benchmark
             int result = myParser.TryCathParse(STRING_TO_PARSE);
 
         }
+        [Benchmark]
+        public void TryParseTest()
+        {
+            int result = myParser.TryParse(STRING_TO_PARSE);
+
+        }
     }
 }
