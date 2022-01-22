@@ -10,16 +10,24 @@ namespace Benchmarkdotnet
     {
         public int TryCathParse(string str)
         {
-            int result;
+            //int result;
+            //try
+            //{
+            //    result = int.Parse(str);
+            //}
+            //catch (Exception)
+            //{
+            //    result = 0;
+            //}
+            //return result;
             try
             {
-                result = int.Parse(str);
+                return int.Parse(str);
             }
             catch (Exception)
             {
-                result = 0;
+                return 0;
             }
-            return result;
         }
 
         public int TryParse(string str)
