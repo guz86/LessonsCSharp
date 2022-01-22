@@ -25,6 +25,10 @@ namespace Benchmark
 
         }
         [Benchmark]
+        public void TryParseTestWithError()
+        {
+            int result = myParser.TryParse(STRING_TO_PARSE_WITH_ERROR);
 
+        }
     }
 }
