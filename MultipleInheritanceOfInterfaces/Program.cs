@@ -11,6 +11,8 @@ namespace MultipleInheritanceOfInterfaces
             //gun.Fire();
             Player player = new Player();
             player.Fire(new Gun());
+
+            player.Trow(new Knife());
         }
     }
 }

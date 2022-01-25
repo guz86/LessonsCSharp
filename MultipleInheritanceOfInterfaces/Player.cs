@@ -12,5 +12,10 @@ namespace MultipleInheritanceOfInterfaces
         {
             weapon.Fire();
         }
+
+        public void Trow (ITrowingWeapon trowingWeapon)
+        {
+            trowingWeapon.Trow();
+        }
     }
 }
