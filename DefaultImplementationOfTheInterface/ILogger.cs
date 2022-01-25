@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DefaultImplementationOfTheInterface
 {
-    interface ILogger
+    public interface ILogger
     {
         void Log(LogLevel logLevel, string message);
     }
