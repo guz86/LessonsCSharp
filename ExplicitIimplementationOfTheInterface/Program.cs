@@ -9,7 +9,9 @@ namespace ExplicitIimplementationOfTheInterface
             // явная реализация интерфейсов
 
             //  может ли класс реализовать два интерфейса у которых объявлено 2 одинаковых метода
-
+            MyClass myClass = new MyClass();
+            Foo(myClass);
+            Baa(myClass);
         }
 
         static void Foo(IFirstInterface firstInterface)

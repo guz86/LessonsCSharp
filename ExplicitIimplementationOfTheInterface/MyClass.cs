@@ -10,7 +10,7 @@ namespace ExplicitIimplementationOfTheInterface
     {
         public void Action()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Action");
         }
     }
 }
