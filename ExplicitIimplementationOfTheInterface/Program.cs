@@ -22,6 +22,23 @@ namespace ExplicitIimplementationOfTheInterface
             ISecondInterface secondInterface = new MyOtherClass();
             secondInterface.Action();
 
+            Console.WriteLine();
+
+            // приведение объекта к необходимому типу данных
+
+            ((IFirstInterface)myOtherClass).Action();
+            ((ISecondInterface)myOtherClass).Action();
+
+            Console.WriteLine();
+
+            // лучший вариант через операторы as или is
+
+            if (myOtherClass is IFirstInterface firstInterface)
+            {
+                firstInterface.Action();
+            }
+
+
         }
 
         static void Foo(IFirstInterface firstInterface)
