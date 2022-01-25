@@ -18,6 +18,12 @@ namespace DefaultImplementationOfTheInterface
         {
             Console.WriteLine(a+b);
         }  
+        // добавление метода, чтобы не реализовывать его в каждом классе
+        // можно задать значение по умолчанию
+        void LogError(string message)
+        {
+            Log(LogLevel.Error, message);
+        }
     }
 
 }
