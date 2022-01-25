@@ -9,5 +9,10 @@ namespace DefaultImplementationOfTheInterface
     public interface ILogger
     {
         void Log(LogLevel logLevel, string message);
+        void Foo()
+        {
+            Console.WriteLine("Foo");
+        }
     }
+
 }
