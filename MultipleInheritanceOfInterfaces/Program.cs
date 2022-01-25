@@ -7,6 +7,8 @@ namespace MultipleInheritanceOfInterfaces
         static void Main(string[] args)
         {
             // множественное наследование интерфейсов
+            IWeapon gun = new Gun();
+            gun.Fire();
         }
     }
 }
