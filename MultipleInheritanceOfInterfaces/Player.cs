@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace MultipleInheritanceOfInterfaces
 {
-    // реализация интерфейса
-    class Gun : IWeapon
+    class Player
     {
-        public void Fire()
+        public void Fire(IWeapon weapon)
         {
-            Console.WriteLine($"{GetType().Name} - Пышь");
+            weapon.Fire();
         }
     }
 }
