@@ -97,6 +97,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleInheritanceOfInterf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitIimplementationOfTheInterface", "ExplicitIimplementationOfTheInterface\ExplicitIimplementationOfTheInterface.csproj", "{8F552BA3-8A3C-4D39-A0A0-4D8B794F8CF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultImplementationOfTheInterface", "DefaultImplementationOfTheInterface\DefaultImplementationOfTheInterface.csproj", "{9AB7277E-7E35-43F5-A401-EE743D5EA464}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,10 @@ Global
 		{8F552BA3-8A3C-4D39-A0A0-4D8B794F8CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F552BA3-8A3C-4D39-A0A0-4D8B794F8CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F552BA3-8A3C-4D39-A0A0-4D8B794F8CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB7277E-7E35-43F5-A401-EE743D5EA464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB7277E-7E35-43F5-A401-EE743D5EA464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB7277E-7E35-43F5-A401-EE743D5EA464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB7277E-7E35-43F5-A401-EE743D5EA464}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
