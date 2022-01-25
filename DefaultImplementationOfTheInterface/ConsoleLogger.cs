@@ -28,6 +28,8 @@ namespace DefaultImplementationOfTheInterface
                 default:
                     break;
             }
+            Console.WriteLine($"{DateTime.Now}: {message}");
+            Console.ResetColor();
         }
     }
 }
