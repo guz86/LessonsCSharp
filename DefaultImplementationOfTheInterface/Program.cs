@@ -13,6 +13,7 @@ namespace DefaultImplementationOfTheInterface
 
             // реализация интерфейса по-умолчанию
             logger.Foo();
+            logger.Sum(1, 2);
 
         }
     }
