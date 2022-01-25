@@ -12,6 +12,10 @@ namespace ExplicitIimplementationOfTheInterface
             MyClass myClass = new MyClass();
             Foo(myClass);
             Baa(myClass);
+            MyOtherClass myOtherClass = new MyOtherClass();
+            Foo(myOtherClass);
+            Baa(myOtherClass);
+
         }
 
         static void Foo(IFirstInterface firstInterface)
