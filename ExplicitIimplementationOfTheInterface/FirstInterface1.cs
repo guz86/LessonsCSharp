@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExplicitIimplementationOfTheInterface
 {
-    interface FirstInterface1
+    interface IFirstInterface
     {
         void Action();
     }

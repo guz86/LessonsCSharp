@@ -11,5 +11,14 @@ namespace ExplicitIimplementationOfTheInterface
             //  может ли класс реализовать два интерфейса у которых объявлено 2 одинаковых метода
 
         }
+
+        static void Foo(IFirstInterface firstInterface)
+        {
+            firstInterface.Action();
+        }
+        static void Baa(ISecondInterface secondInterface)
+        {
+            secondInterface.Action();
+        }
     }
 }
