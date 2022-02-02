@@ -93,11 +93,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark", "Benchmark\Benc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchTest", "BenchTest\BenchTest.csproj", "{BF0E93AB-266E-4E4A-AB83-A90877E5E2A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleInheritanceOfInterfaces", "MultipleInheritanceOfInterfaces\MultipleInheritanceOfInterfaces.csproj", "{3B465CB3-9FC2-4F4D-A2C8-D6B75AC2FE47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultipleInheritanceOfInterfaces", "MultipleInheritanceOfInterfaces\MultipleInheritanceOfInterfaces.csproj", "{3B465CB3-9FC2-4F4D-A2C8-D6B75AC2FE47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitIimplementationOfTheInterface", "ExplicitIimplementationOfTheInterface\ExplicitIimplementationOfTheInterface.csproj", "{8F552BA3-8A3C-4D39-A0A0-4D8B794F8CF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExplicitIimplementationOfTheInterface", "ExplicitIimplementationOfTheInterface\ExplicitIimplementationOfTheInterface.csproj", "{8F552BA3-8A3C-4D39-A0A0-4D8B794F8CF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultImplementationOfTheInterface", "DefaultImplementationOfTheInterface\DefaultImplementationOfTheInterface.csproj", "{9AB7277E-7E35-43F5-A401-EE743D5EA464}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefaultImplementationOfTheInterface", "DefaultImplementationOfTheInterface\DefaultImplementationOfTheInterface.csproj", "{9AB7277E-7E35-43F5-A401-EE743D5EA464}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureXY", "StructureXY\StructureXY.csproj", "{FCFFED0D-BF32-4320-9643-4A4007C75E81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -297,6 +299,10 @@ Global
 		{9AB7277E-7E35-43F5-A401-EE743D5EA464}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AB7277E-7E35-43F5-A401-EE743D5EA464}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AB7277E-7E35-43F5-A401-EE743D5EA464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFFED0D-BF32-4320-9643-4A4007C75E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFFED0D-BF32-4320-9643-4A4007C75E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFFED0D-BF32-4320-9643-4A4007C75E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFFED0D-BF32-4320-9643-4A4007C75E81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
