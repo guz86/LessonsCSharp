@@ -6,7 +6,8 @@ namespace StructureXY
     {
         static void Main(string[] args)
         {
-            
+            // две реализации Point
+
         }
     }
 }
