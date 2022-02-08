@@ -101,9 +101,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefaultImplementationOfTheI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StructureXY", "StructureXY\StructureXY.csproj", "{FCFFED0D-BF32-4320-9643-4A4007C75E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkStructClass", "BenchmarkStructClass\BenchmarkStructClass.csproj", "{A4CB4B3C-CFD5-4F15-A426-4FA8262F7725}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkStructClass", "BenchmarkStructClass\BenchmarkStructClass.csproj", "{A4CB4B3C-CFD5-4F15-A426-4FA8262F7725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxingAndUnboxing", "BoxingAndUnboxing\BoxingAndUnboxing.csproj", "{2967BE77-98FD-47D2-B4C5-06D17A8BE162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxingAndUnboxing", "BoxingAndUnboxing\BoxingAndUnboxing.csproj", "{2967BE77-98FD-47D2-B4C5-06D17A8BE162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{C19328C5-47AA-4226-AD46-1E0AA0A5366F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -315,6 +317,10 @@ Global
 		{2967BE77-98FD-47D2-B4C5-06D17A8BE162}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2967BE77-98FD-47D2-B4C5-06D17A8BE162}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2967BE77-98FD-47D2-B4C5-06D17A8BE162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19328C5-47AA-4226-AD46-1E0AA0A5366F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19328C5-47AA-4226-AD46-1E0AA0A5366F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19328C5-47AA-4226-AD46-1E0AA0A5366F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19328C5-47AA-4226-AD46-1E0AA0A5366F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
