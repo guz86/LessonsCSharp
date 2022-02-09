@@ -14,6 +14,13 @@ namespace Generics
 
             Swap(ref a, ref b);
             Console.WriteLine($"a = {a}, b = {b}");
+
+
+            string c = "C", d = "D";
+            Console.WriteLine($"c = {c}, d = {d}");
+
+            Swap(ref c, ref d);
+            Console.WriteLine($"c = {c}, d = {d}");
         }
         //static void Swap(ref int a, ref int b)
         static void Swap<T>(ref T a, ref T b)
@@ -28,5 +35,10 @@ namespace Generics
         //    a = b;
         //    b = temp;
         //}
+
+        static T Foo<T>()
+        {
+            return default(T);
+        }
     }
 }
