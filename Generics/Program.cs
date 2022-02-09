@@ -41,7 +41,13 @@ namespace Generics
             List<string> listString = new List<string>();
 
 
+            //
+            MyList<int> myList = new MyList<int>();
+            myList.Add(2);
+            myList.Add(2);
+            myList.Add(3);
 
+            Console.WriteLine(myList[0]);
         }
         //static void Swap(ref int a, ref int b)
         static void Swap<T>(ref T a, ref T b)
