@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Generics
 {
@@ -25,7 +26,21 @@ namespace Generics
 
             int result = Foo<int>();
             string result2 = Foo<string>();
-            
+
+
+            //
+            //
+
+            //обобщеные коллекции
+            List<int> list = new List<int>();
+            // класс некая обертка над массивом, внутри класса находится массив
+            list.Add(1);
+            list.Add(3);
+            list.Add(2);
+            Console.WriteLine(list[0]);
+            List<string> listString = new List<string>();
+
+
 
         }
         //static void Swap(ref int a, ref int b)
