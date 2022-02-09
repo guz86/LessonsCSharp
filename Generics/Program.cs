@@ -21,6 +21,12 @@ namespace Generics
 
             Swap(ref c, ref d);
             Console.WriteLine($"c = {c}, d = {d}");
+
+
+            int result = Foo<int>();
+            string result2 = Foo<string>();
+            
+
         }
         //static void Swap(ref int a, ref int b)
         static void Swap<T>(ref T a, ref T b)
@@ -38,6 +44,8 @@ namespace Generics
 
         static T Foo<T>()
         {
+            // вернуть дефолтное значения для типа данных   
+            //return default;
             return default(T);
         }
     }
