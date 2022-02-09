@@ -15,17 +15,18 @@ namespace Generics
             Swap(ref a, ref b);
             Console.WriteLine($"a = {a}, b = {b}");
         }
-        static void Swap(ref int a, ref int b)
+        //static void Swap(ref int a, ref int b)
+        static void Swap<T>(ref T a, ref T b)
         {
-            int temp = a;
-            a = b;
-            b = temp; 
-        }
-        static void Swap(ref double a, ref double b)
-        {
-            double temp = a;
+            T temp = a;
             a = b;
             b = temp;
         }
+        //static void Swap(ref double a, ref double b)
+        //{
+        //    double temp = a;
+        //    a = b;
+        //    b = temp;
+        //}
     }
 }
