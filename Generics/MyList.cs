@@ -24,7 +24,7 @@ namespace Generics
                 _array[index] = value;
             }
         }
-         
+
         // поле количество элементов
         public int Count { get { return _array.Length; } }
         // добавление элементов к массиву
@@ -32,7 +32,7 @@ namespace Generics
         {
             // новый массив на большее количество элементов, добавляем значение
             // и присваиваем, т.к. Т, будет работать с любым типом данных
-            var newArray = new T[_array.Length+1];
+            var newArray = new T[_array.Length + 1];
             for (int i = 0; i < _array.Length; i++)
             {
                 newArray[i] = _array[i];
