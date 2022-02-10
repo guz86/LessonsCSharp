@@ -6,7 +6,11 @@ namespace ExtremeCode12
     {
         static void Main(string[] args)
         {
-            
+            Human human = new Human();
+            human.SayHello();
+            Boozer boozer = new Boozer();
+            boozer.SayHello();
+            boozer.SayBoo();
         }
     }
 }
