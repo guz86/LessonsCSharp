@@ -10,7 +10,8 @@ namespace Enum
             {
                 // информация о нажатой клавише на клавиатуре
                 ConsoleKey consoleKey = Console.ReadKey().Key;
-                Console.WriteLine(consoleKey);
+                Console.Clear();
+                Console.WriteLine(consoleKey+"\t"+(int)consoleKey);
                 if (consoleKey == ConsoleKey.Enter)
                 {
                     Console.WriteLine($"Нажата клавиша {ConsoleKey.Enter}");
