@@ -29,6 +29,7 @@ namespace Scrying
         {
             // цикл работает в отдельном потоке
             // ожидает выполнения кода ниже чтобы пойти дальше
+            bPredict.Enabled = false; // выключаем кнопку, от двойных нажатий
             await Task.Run(() =>
              {
                  for (int i = 0; i <= 100; i++)
@@ -51,10 +52,10 @@ namespace Scrying
 
             progressBar1.Value = 0;
             Text = APP_NAME;
+            bPredict.Enabled = true;
 
 
-
-            }
+        }
 
         // убирает баг с появлением вывода раньше чем заканчивается бар
         private void UpdateProgessBar(int i)
