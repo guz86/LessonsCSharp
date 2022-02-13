@@ -35,7 +35,7 @@ namespace EnumSimple
                 Console.WriteLine((DayOfWeek)3); // число 3 приводим к нашему enum
 
                 // что делать если число выходит за пределы enum, пришло извне
-                int day = 44;
+                int day = 5;
                 //Console.WriteLine((DayOfWeek)day);
                 // тогда вернется просто число из int
                 // проверка элемента в соотвествующем enum DayOfWeek
@@ -49,6 +49,15 @@ namespace EnumSimple
                 }
 
                 Console.WriteLine(dayOfWeek);
+
+
+
+                // получить информацию о всех доступных значениях enum Color
+                var values = Enum.GetValues(typeof(Color));
+                foreach (var item in values)
+                {
+                    Console.WriteLine(item);
+                }
             }
 
             static DayOfWeek GetNextDay(DayOfWeek day)
