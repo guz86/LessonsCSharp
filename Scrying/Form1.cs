@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Scrying
 {
@@ -24,7 +25,11 @@ namespace Scrying
 
         private void bPredict_Click(object sender, EventArgs e)
         {
-
+            for (int i = 0; i < 100; i++)
+            {
+                progressBar1.Value = i;
+                Thread.Sleep(20);
+            }
         }
     }
 }
