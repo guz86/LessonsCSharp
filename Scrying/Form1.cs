@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Scrying
 {
     public partial class Form1 : Form
     {
         private const string APP_NAME = "SCRYING";
+        private readonly string PREDICTIONS_CONFIG_PATH= $"{Environment.CurrentDirectory}\\predictionsConfig.json";
+        private string[] _predictions;
         public Form1()
         {
             InitializeComponent();
@@ -81,6 +85,31 @@ namespace Scrying
         private void Form1_Load(object sender, EventArgs e)
         {
             Text = APP_NAME;
+            // считывание данных из файла
+            try
+            {
+                var data = File.ReadAllText(PREDICTIONS_CONFIG_PATH);
+                _predictions = JsonConvert.DeserializeObject<string[]>(data);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (_predictions == null)
+                {
+                    Close();
+
+                }
+                else if (_predictions.Length == 0)
+                {
+                    MessageBox.Show("Предсказания закончились");
+                    Close();
+                }
+
+            }
         }
     }
 }
