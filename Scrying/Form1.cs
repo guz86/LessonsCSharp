@@ -25,11 +25,16 @@ namespace Scrying
 
         private void bPredict_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 100; i++)
-            {
-                progressBar1.Value = i;
-                Thread.Sleep(20);
-            }
+            Task.Run(() =>
+             {
+                 for (int i = 0; i < 100; i++)
+                 {
+                     progressBar1.Value = i;
+                     Thread.Sleep(20);
+                 }
+             }
+            );
+
         }
     }
 }
