@@ -111,6 +111,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtremeCode12", "ExtremeCod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumSimple", "Enum\EnumSimple.csproj", "{8ECA3B22-E2A0-4596-BF8B-3022960AD745}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrory", "MyLibrory\MyLibrory.csproj", "{A8D9AF59-3A90-465F-A07C-F7FAAE314071}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -333,6 +335,10 @@ Global
 		{8ECA3B22-E2A0-4596-BF8B-3022960AD745}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ECA3B22-E2A0-4596-BF8B-3022960AD745}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ECA3B22-E2A0-4596-BF8B-3022960AD745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8D9AF59-3A90-465F-A07C-F7FAAE314071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D9AF59-3A90-465F-A07C-F7FAAE314071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D9AF59-3A90-465F-A07C-F7FAAE314071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D9AF59-3A90-465F-A07C-F7FAAE314071}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
