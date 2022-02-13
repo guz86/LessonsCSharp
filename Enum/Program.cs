@@ -61,9 +61,30 @@ namespace EnumSimple
 
                 // парсинг значения из enum Color вводитм со строки
                 string str = Console.ReadLine();
+                // tryParse
                 Color color = (Color)Enum.Parse(typeof(Color), str, ignoreCase: true);
                 Console.WriteLine(color);
 
+
+                // switch
+                switch (color)
+                {
+                    case Color.Red:
+                        Console.WriteLine("Red");
+                        break;
+                    case Color.Grey:
+                        break;
+                    case Color.Green:
+                        break;
+                    case Color.Yellow:
+                        break;
+                    case Color.Pink:
+                        break;
+                    case Color.Orange:
+                        break;
+                    default:
+                        break;
+                }
             }
 
             static DayOfWeek GetNextDay(DayOfWeek day)
