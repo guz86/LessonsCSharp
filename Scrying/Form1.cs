@@ -23,17 +23,20 @@ namespace Scrying
 
         }
 
-        private void bPredict_Click(object sender, EventArgs e)
+        // добавляем асинхронность
+        private async void bPredict_Click(object sender, EventArgs e)
         {
             // цикл работает в отдельном потоке
-            Task.Run(() =>
+            // ожидает выполнения кода ниже чтобы пойти дальше
+            await Task.Run(() =>
              {
                  for (int i = 0; i < 100; i++)
                  {
                      // с помощью делегатов через метод Invoke который работает с делегатом, лямдой помещаем код
                      this.Invoke(new Action(() =>
                      {
-                         progressBar1.Value = i;
+                         //progressBar1.Value = i;
+                         UpdateProgessBar(i);
                      }));
 
                      Thread.Sleep(20);
@@ -44,6 +47,24 @@ namespace Scrying
             // логика вывода предсказания
             MessageBox.Show("Prediction");
 
+
+
+            }
+
+        // убирает баг с появлением вывода раньше чем заканчивается бар
+        private void UpdateProgessBar(int i)
+        {
+            if (i == progressBar1.Maximum)
+            {
+                progressBar1.Maximum = i + 1;
+                progressBar1.Value = i + 1;
+                progressBar1.Maximum = i;
+            }
+            else
+            {
+                progressBar1.Value = i + 1;
+            }
+            progressBar1.Value = i;
         }
     }
 }
