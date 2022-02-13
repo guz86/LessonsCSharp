@@ -25,15 +25,24 @@ namespace Scrying
 
         private void bPredict_Click(object sender, EventArgs e)
         {
+            // цикл работает в отдельном потоке
             Task.Run(() =>
              {
                  for (int i = 0; i < 100; i++)
                  {
-                     progressBar1.Value = i;
+                     // с помощью делегатов через метод Invoke который работает с делегатом, лямдой помещаем код
+                     this.Invoke(new Action(() =>
+                     {
+                         progressBar1.Value = i;
+                     }));
+
                      Thread.Sleep(20);
                  }
              }
             );
+
+            // логика вывода предсказания
+            MessageBox.Show("Prediction");
 
         }
     }
