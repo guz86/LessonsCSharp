@@ -18,6 +18,7 @@ namespace Scrying
         private const string APP_NAME = "SCRYING";
         private readonly string PREDICTIONS_CONFIG_PATH= $"{Environment.CurrentDirectory}\\predictionsConfig.json";
         private string[] _predictions;
+        private Random _random = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -52,7 +53,11 @@ namespace Scrying
             );
 
             // логика вывода предсказания
-            MessageBox.Show("Prediction");
+
+            var index = _random.Next(_predictions.Length);
+            var predition = _predictions[index];
+
+            MessageBox.Show($"{predition} =)");
 
             progressBar1.Value = 0;
             Text = APP_NAME;
