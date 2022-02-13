@@ -105,11 +105,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkStructClass", "Ben
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxingAndUnboxing", "BoxingAndUnboxing\BoxingAndUnboxing.csproj", "{2967BE77-98FD-47D2-B4C5-06D17A8BE162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{C19328C5-47AA-4226-AD46-1E0AA0A5366F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{C19328C5-47AA-4226-AD46-1E0AA0A5366F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtremeCode12", "ExtremeCode12\ExtremeCode12.csproj", "{1AF32BFD-B232-47E2-A273-C1A33920214C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtremeCode12", "ExtremeCode12\ExtremeCode12.csproj", "{1AF32BFD-B232-47E2-A273-C1A33920214C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{8ECA3B22-E2A0-4596-BF8B-3022960AD745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumSimple", "Enum\EnumSimple.csproj", "{8ECA3B22-E2A0-4596-BF8B-3022960AD745}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
