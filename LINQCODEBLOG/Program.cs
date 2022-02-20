@@ -15,13 +15,22 @@ namespace LINQCODEBLOG
             {
                 collection.Add(i); 
             }
-
+            //  Linq
             var result = from item in collection
                          where item > 5
                          select item;
 
 
             foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
+
+            // с помощью методов расширения . со стрелочками
+            //=> лямбда выражение, - такой что ... условие
+            var result2 = collection.Where(item => item > 6);
+
+            foreach (var item in result2)
             {
                 Console.WriteLine(item);
             }
