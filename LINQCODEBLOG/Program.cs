@@ -158,6 +158,19 @@ namespace LINQCODEBLOG
             Console.WriteLine(allProduct);
             var anyProduct = products.Any(product => product.Energy == 10);
             Console.WriteLine(anyProduct);
+            Console.WriteLine();
+
+            // вхождение, принадлежит ли элемент коллекции 
+            // проверка по ссылке
+            var contrainsFalse = new Product(); // элемент другой коллекции
+            var containsProductFalse = products.Contains(contrainsFalse);
+            Console.WriteLine(containsProductFalse);
+            // products[3] третий элемент нашей коллекции products ы
+            var containsProductTrue = products.Contains(products[3]); 
+            Console.WriteLine(containsProductTrue);
+
+            // удаление дублирующих элементов из коллекции
+
 
 
         }
