@@ -140,7 +140,24 @@ namespace LINQCODEBLOG
                     Console.WriteLine(item.Energy);
                 }
             }
+            Console.WriteLine();
 
+
+            // перевернуть
+            products.Reverse();
+            foreach (var item in products)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
+
+
+            // all any возвращает bool
+
+            var allProduct = products.All(product => product.Energy == 10);
+            Console.WriteLine(allProduct);
+            var anyProduct = products.Any(product => product.Energy == 10);
+            Console.WriteLine(anyProduct);
 
 
         }
