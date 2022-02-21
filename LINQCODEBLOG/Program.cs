@@ -49,7 +49,7 @@ namespace LINQCODEBLOG
                 Product product = new Product()
                 {
                     Name = "product:" + i,
-                    Energy = rand.Next(10, 1000) 
+                    Energy = rand.Next(10, 12) 
                 };
                 products.Add(product);
             }
@@ -101,6 +101,33 @@ namespace LINQCODEBLOG
                 Console.WriteLine(item);
             }
             Console.WriteLine();
+
+
+            // orderby 
+
+            var orderProduct = products.OrderBy(product => product.Energy)
+                .ThenBy(product => product.Name);
+
+            foreach (var item in orderProduct)
+            {
+                Console.WriteLine(item);
+            }
+
+//Name: product: 1  Energy: 10
+//Name: product: 7  Energy: 10
+//Name: product: 9  Energy: 10
+//Name: product: 10 Energy: 11 тут по первой цифре в строке
+//Name: product: 2  Energy: 11
+//Name: product: 3  Energy: 11
+//Name: product: 4  Energy: 11
+//Name: product: 5  Energy: 11
+//Name: product: 6  Energy: 11
+//Name: product: 8  Energy: 11
+
+
+            // группировка
+
+
         }
     }
 }
