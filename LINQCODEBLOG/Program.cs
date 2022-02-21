@@ -113,19 +113,34 @@ namespace LINQCODEBLOG
                 Console.WriteLine(item);
             }
 
-//Name: product: 1  Energy: 10
-//Name: product: 7  Energy: 10
-//Name: product: 9  Energy: 10
-//Name: product: 10 Energy: 11 тут по первой цифре в строке
-//Name: product: 2  Energy: 11
-//Name: product: 3  Energy: 11
-//Name: product: 4  Energy: 11
-//Name: product: 5  Energy: 11
-//Name: product: 6  Energy: 11
-//Name: product: 8  Energy: 11
+            //Name: product: 1  Energy: 10
+            //Name: product: 7  Energy: 10
+            //Name: product: 9  Energy: 10
+            //Name: product: 10 Energy: 11 тут по первой цифре в строке
+            //Name: product: 2  Energy: 11
+            //Name: product: 3  Energy: 11
+            //Name: product: 4  Energy: 11
+            //Name: product: 5  Energy: 11
+            //Name: product: 6  Energy: 11
+            //Name: product: 8  Energy: 11
+            Console.WriteLine();
 
 
             // группировка
+
+
+            var groupProduct = products.GroupBy(product => product.Energy);
+            // возращает группированные элементы
+
+            foreach (var items in groupProduct)
+            {
+                Console.WriteLine("items Key " + items.Key);
+                foreach (var item in items)
+                {
+                    Console.WriteLine(item.Energy);
+                }
+            }
+
 
 
         }
