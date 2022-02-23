@@ -171,8 +171,32 @@ namespace LINQCODEBLOG
 
             // удаление дублирующих элементов из коллекции
 
+            int[] array = new int []{ 1, 2, 3, 2, 1, 3, 2, 1, 35, 6, 4 };
+            var unionArray = array.Union(array);
+
+            foreach (var item in array)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
+            // Повторяющиеся элементы добавляются в результат только один раз
+            foreach (var item in unionArray)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine();
 
 
+            // найти пересечения множеств, только то что совпадает
+
+            int[] array2 = new int[] { 35, 55 };
+            var intersect = array.Intersect(array2);
+
+            foreach (var item in intersect)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
