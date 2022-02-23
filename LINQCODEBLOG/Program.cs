@@ -197,6 +197,18 @@ namespace LINQCODEBLOG
             {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine();
+
+
+            // найти что не пересекается exept
+
+            // Повторяющиеся элементы добавляются в результат только один раз
+            var exept = array.Except(array2);
+            foreach (var item in exept)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
