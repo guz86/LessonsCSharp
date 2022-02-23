@@ -215,6 +215,11 @@ namespace LINQCODEBLOG
             int aggregate = array.Aggregate((x, y) => x * y);
             Console.WriteLine("\n"+ aggregate);
 
+
+            // сумма не всех элементов, часть пропустить
+            int sumElements = array.Skip(2).Take(3).Sum();
+            Console.WriteLine("\n" + sumElements);
+            // пропустить первые 2 элемента, и взять 3 элемента и просуммировать
         }
     }
 }
