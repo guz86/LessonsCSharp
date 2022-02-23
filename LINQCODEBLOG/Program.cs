@@ -209,6 +209,12 @@ namespace LINQCODEBLOG
             {
                 Console.WriteLine(item);
             }
+
+            // перемножить все элементы между собой
+            // последовательно перемножит все элементы между собой
+            int aggregate = array.Aggregate((x, y) => x * y);
+            Console.WriteLine("\n"+ aggregate);
+
         }
     }
 }
