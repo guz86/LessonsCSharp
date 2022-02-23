@@ -232,7 +232,8 @@ namespace LINQCODEBLOG
             var FirstproductElement = products.FirstOrDefault(product => product.Energy == 100);
 
 
-            // 
+            // получить элемент по индексу ElementAtOrDefault - исключение если выходит за границы диапазона
+            int ElementAt = array.ElementAt(5);
 
         }
     }
