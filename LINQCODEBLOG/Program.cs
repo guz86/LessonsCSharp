@@ -220,6 +220,20 @@ namespace LINQCODEBLOG
             int sumElements = array.Skip(2).Take(3).Sum();
             Console.WriteLine("\n" + sumElements);
             // пропустить первые 2 элемента, и взять 3 элемента и просуммировать
+
+
+            // операции выбора
+            int firstElement = array.First(); // может быть исключение, если массив пустой
+            int firstElementDef = array.FirstOrDefault(); // обрабатываем исключение на дефолт
+            // выбрать эелемент с конкретным значением
+            // если 2 элемента в коллекции то в Single() будет исключение. SingleOrDefault если коллекция пустая
+            var productElement = products.SingleOrDefault(product => product.Energy == 500);
+            // первый продукт у которого ценность будет равна 100
+            var FirstproductElement = products.FirstOrDefault(product => product.Energy == 100);
+
+
+            // 
+
         }
     }
 }
