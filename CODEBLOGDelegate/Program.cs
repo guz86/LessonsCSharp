@@ -64,6 +64,15 @@ namespace DelegateCODEBLOG
             Action<int> ActionDelegateInt = ActionValue2;
             ActionDelegateInt(4);
 
+            // предикат, возвращает будево занчение и принимает один аргумент
+            Predicate<int> predicate;
+
+            //  в любом случае возвращает какое-то значение
+            Func<int> func; // int аргументы до 16шт
+            Func<int, string> func2; // string тип возвращаемого значения
+
+            // перед тем как обращаться к делегату нужно проверить на null
+
         }
 
         public static void Action1()
