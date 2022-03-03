@@ -13,6 +13,8 @@ namespace DelegateCODEBLOG
         // делегат внутри класса
         public delegate int ValueDelegate(int i);
 
+
+
         static void Main(string[] args)
         {
             MyDelegate myDelegate = Action1;
@@ -52,6 +54,16 @@ namespace DelegateCODEBLOG
             // 5 будет передана во все методы делегата
 
             valueDelegate((new Random()).Next(9, 99));
+
+
+
+            // шаблонные делегаты, зданный не нужно создавать, сразу использовать, может быть перегружен от 0 до 16 аргументов
+            Action ActionDelegate = Action1;
+            ActionDelegate();
+
+            Action<int> ActionDelegateInt = ActionValue2;
+            ActionDelegateInt(4);
+
         }
 
         public static void Action1()
@@ -67,6 +79,12 @@ namespace DelegateCODEBLOG
         {
             Console.WriteLine(i);
             return i;
+        }
+
+        public static void ActionValue2(int i)
+        {
+            Console.WriteLine(i);
+            
         }
     }
 }
