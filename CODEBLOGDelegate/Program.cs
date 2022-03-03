@@ -6,8 +6,13 @@ namespace DelegateCODEBLOG
     //
     public delegate void MyDelegate();
     // не принимает аргументов, не возвращает значений
+
+
     class Program
     {
+        // делегат внутри класса
+        public delegate int ValueDelegate(int i);
+
         static void Main(string[] args)
         {
             MyDelegate myDelegate = Action1;
@@ -30,6 +35,23 @@ namespace DelegateCODEBLOG
             myDelegate2 -= Action2;
 
             myDelegate2.Invoke();
+
+            Console.WriteLine();
+
+            // соединение делегатов
+
+            MyDelegate myDelegate1 = myDelegate + myDelegate2;
+            myDelegate1();
+
+
+            //
+            ValueDelegate valueDelegate = new ValueDelegate(ActionValue);
+            valueDelegate += ActionValue;
+            valueDelegate += ActionValue;
+            valueDelegate(5);
+            // 5 будет передана во все методы делегата
+
+            valueDelegate((new Random()).Next(9, 99));
         }
 
         public static void Action1()
@@ -39,6 +61,12 @@ namespace DelegateCODEBLOG
         public static void Action2()
         {
             Console.WriteLine("Action2");
+        }
+
+        public static int ActionValue(int i)
+        {
+            Console.WriteLine(i);
+            return i;
         }
     }
 }
