@@ -72,6 +72,11 @@ namespace DelegateCODEBLOG
             Func<int, string> func2; // string тип возвращаемого значения
 
             // перед тем как обращаться к делегату нужно проверить на null
+            Func<int,int> func3 = ActionValue;
+            if (func3 != null)
+            func3(333);
+            // или присутствует ли внутри делегата хотя бы один метод
+            func3?.Invoke(6666);
 
         }
 
