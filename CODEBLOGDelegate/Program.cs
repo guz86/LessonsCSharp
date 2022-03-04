@@ -14,11 +14,13 @@ namespace DelegateCODEBLOG
         public delegate int ValueDelegate(int i);
 
 
+        // событие объявляется в классе с помощью делегата
+
+        public event MyDelegate Event;
+        public event Action EventAction;
 
         static void Main(string[] args)
         {
-
-
             #region delegate
             MyDelegate myDelegate = Action1;
             // второй метод в переменную делегата
@@ -67,7 +69,7 @@ namespace DelegateCODEBLOG
             Action<int> ActionDelegateInt = ActionValue2;
             ActionDelegateInt(4);
 
-            // предикат, возвращает будево занчение и принимает один аргумент
+            // предикат, возвращает булево значение и принимает один аргумент
             Predicate<int> predicate;
 
             //  в любом случае возвращает какое-то значение
@@ -82,6 +84,20 @@ namespace DelegateCODEBLOG
             // или присутствует ли внутри делегата хотя бы один метод, если нет ничего не произойдет и выполнение скрипта пойдет дальше
             func3?.Invoke(6666);
             #endregion
+            Console.WriteLine();
+            // человек спит
+            Person person = new Person();
+            // подписываемся на событие
+            person.GoToSleep += Person_GoToSleep;
+
+            person.TakeTime(DateTime.Parse("04.03.2022 14:33:00"));
+            person.TakeTime(DateTime.Parse("04.03.2022 03:33:00"));
+        }
+
+        //обработчик события
+        private static void Person_GoToSleep()
+        {
+            Console.WriteLine("Пошел спать");
         }
 
         public static void Action1()
