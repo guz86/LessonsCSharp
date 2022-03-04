@@ -17,6 +17,9 @@ namespace DelegateCODEBLOG
 
         static void Main(string[] args)
         {
+
+
+            #region delegate
             MyDelegate myDelegate = Action1;
             // второй метод в переменную делегата
             myDelegate += Action2;
@@ -75,9 +78,10 @@ namespace DelegateCODEBLOG
             Func<int,int> func3 = ActionValue;
             if (func3 != null)
             func3(333);
-            // или присутствует ли внутри делегата хотя бы один метод
-            func3?.Invoke(6666);
 
+            // или присутствует ли внутри делегата хотя бы один метод, если нет ничего не произойдет и выполнение скрипта пойдет дальше
+            func3?.Invoke(6666);
+            #endregion
         }
 
         public static void Action1()
