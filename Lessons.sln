@@ -121,7 +121,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neyron", "Neyron\Neyron.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQCODEBLOG", "LINQCODEBLOG\LINQCODEBLOG.csproj", "{2056235C-34CB-460E-AE99-575BB5D02A85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateCODEBLOG", "CODEBLOGDelegate\DelegateCODEBLOG.csproj", "{7FD127B5-28DC-4D69-AF3A-7BE11A0B3F71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateCODEBLOG", "CODEBLOGDelegate\DelegateCODEBLOG.csproj", "{7FD127B5-28DC-4D69-AF3A-7BE11A0B3F71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesCodaza", "DelegatesCodaza\DelegatesCodaza.csproj", "{FDEF0477-4BD6-4754-9F7C-3563B3762874}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -369,6 +371,10 @@ Global
 		{7FD127B5-28DC-4D69-AF3A-7BE11A0B3F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FD127B5-28DC-4D69-AF3A-7BE11A0B3F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FD127B5-28DC-4D69-AF3A-7BE11A0B3F71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEF0477-4BD6-4754-9F7C-3563B3762874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEF0477-4BD6-4754-9F7C-3563B3762874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEF0477-4BD6-4754-9F7C-3563B3762874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEF0477-4BD6-4754-9F7C-3563B3762874}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
