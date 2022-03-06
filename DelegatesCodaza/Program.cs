@@ -10,6 +10,10 @@ namespace DelegatesCodaza
         //
 
         public delegate void DelegateMulti();
+        //
+
+
+        public delegate void AnonimMethodDelegate();
 
         static void Main(string[] args)
         {
@@ -28,6 +32,18 @@ namespace DelegatesCodaza
             DelegateMulti delegateMulti = Func1;
             delegateMulti += Func2;
             delegateMulti();
+
+            // ссылки на анонимные методы
+            AnonimMethodDelegate anonimMethodDelegate = delegate ()
+            {
+                Console.WriteLine("Hey");
+            };
+            anonimMethodDelegate();
+
+            //
+
+
+
         }
         
         private static void ShowMessage() {
