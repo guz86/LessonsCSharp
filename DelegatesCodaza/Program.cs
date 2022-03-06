@@ -14,6 +14,10 @@ namespace DelegatesCodaza
 
 
         public delegate void AnonimMethodDelegate();
+        //
+
+        public delegate void NoParameters();
+
 
         static void Main(string[] args)
         {
@@ -40,8 +44,12 @@ namespace DelegatesCodaza
             };
             anonimMethodDelegate();
 
-            //
-
+            // передача делегатов в качестве параметров в другие методы
+            NoParameters noParameters = delegate ()
+            {
+                Console.WriteLine("NoParameters");
+            };
+            Foo(noParameters);
 
 
         }
@@ -62,6 +70,11 @@ namespace DelegatesCodaza
         private static void Func1()
         {
             Console.WriteLine("Func1");
+        }
+
+        private static void Foo(NoParameters noParameters)
+        {
+            noParameters();
         }
     }
 }
