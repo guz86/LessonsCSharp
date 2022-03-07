@@ -18,7 +18,13 @@ namespace DelegatesExempleCodaza
             // запускаем
             stockExchangeMonitor.Start();
 
-
+            // пояснение.
+            // данном случае я не передаю в свойство значение,
+            // а делаю вызов метода, ссылка на который находится в значении
+            // свойства PriceChangeHandler, а метод ожидает один входной параметр - price.
+            // То есть, из метода Main(), мы передаём ссылку на метод ShowPrice()
+            // через свойство PriceChangeHandler, а метод ShowPrice()
+            // вызывается из StockExchangeMonitor через свойство PriceChangeHandler.
         }
 
         // метод который будет выводить текущую цену на консоль
