@@ -14,9 +14,12 @@ namespace DelegateCODEBLOG
         public delegate int ValueDelegate(int i);
 
 
+        // СОБЫТИЯ
         // событие объявляется в классе с помощью делегата
 
+        // выше public delegate void MyDelegate();
         public event MyDelegate Event;
+       // или
         public event Action EventAction;
 
         static void Main(string[] args)
@@ -60,45 +63,78 @@ namespace DelegateCODEBLOG
 
             valueDelegate((new Random()).Next(9, 99));
 
+            // шаблон делегата
 
 
             // шаблонные делегаты, зданный не нужно создавать, сразу использовать, может быть перегружен от 0 до 16 аргументов
+            // можно не объявлять public delegate void Action() - делегат который не возвращает значения;
             Action ActionDelegate = Action1;
             ActionDelegate();
-
+            // с аргументом принимает от 0 до 16 аргументов
+            // можно не объявлять public delegate void Action(int i) 
             Action<int> ActionDelegateInt = ActionValue2;
             ActionDelegateInt(4);
 
             // предикат, возвращает булево значение и принимает один аргумент
+            // можно не объявлять public delegate bool Predicate<T>(T value)
+            // можно не объявлять public delegate bool Predicate(int i)
             Predicate<int> predicate;
 
             //  в любом случае возвращает какое-то значение
-            Func<int> func; // int аргументы до 16шт
+            // можно не объявлять public delegate int Func()
+            Func<int> func; // int возвращает и аргументы до 16шт
+
+            // можно не объявлять public delegate int Func(string s)
             Func<int, string> func2; // string тип возвращаемого значения
 
-            // перед тем как обращаться к делегату нужно проверить на null
+            // ОБЯЗАТЕЛЬНО перед тем как обращаться к делегату нужно проверить на null
             Func<int,int> func3 = ActionValue;
-            if (func3 != null)
+            if (func3 != null) // есть ли в нем какие то методы
             func3(333);
-
             // или присутствует ли внутри делегата хотя бы один метод, если нет ничего не произойдет и выполнение скрипта пойдет дальше
             func3?.Invoke(6666);
-            #endregion
             Console.WriteLine();
-            // человек спит
-            Person person = new Person();
+            #endregion
+
+
+            // СОБЫТИЯ
+
+            // пример, человек спит
+            Person person = new()
+            {
+                Name = "Alexey"
+            };
             // подписываемся на событие
             person.GoToSleep += Person_GoToSleep;
 
+            person.DoWork += Person_DoWork;
+
             person.TakeTime(DateTime.Parse("04.03.2022 14:33:00"));
             person.TakeTime(DateTime.Parse("04.03.2022 03:33:00"));
+
+
+            // чаще используется шаблон делегата EventHandler
         }
 
-        //обработчик события
+        private static void Person_DoWork(object sender, EventArgs e)
+        {
+            if (sender is Person)
+            {
+                Console.WriteLine($"{((Person)sender).Name} пошел работать");
+
+            }
+        }
+
+        //обработчик события начало
         private static void Person_GoToSleep()
         {
             Console.WriteLine("Пошел спать");
         }
+
+        //обработчик события конец
+
+
+
 
         public static void Action1()
         {
